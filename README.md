@@ -13,7 +13,6 @@ This is a test task for QA position
 - [Generating Allure Reports](#generating-allure-reports)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
