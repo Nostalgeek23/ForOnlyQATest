@@ -1,0 +1,26 @@
+12:27:01.019 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+12:27:01.036 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+12:27:13.865 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+12:27:13.882 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+12:27:39.073 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Integrate source: testng:intellij:v1.1.4
+12:27:39.074 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+12:27:39.324 [ApplicationImpl pooled thread 23] INFO  c.b.l.BrowserStackRunExtension - maven
+12:27:39.324 [ApplicationImpl pooled thread 23] INFO  com.browserstack.utils.Helpers - null
+12:27:57.621 [java.exe] INFO  c.b.launchers.LaunchMavenCommand - Completed maven archetype command
+12:31:22.037 [ApplicationImpl pooled thread 26] INFO  c.b.l.BrowserStackRunExtension - maven
+12:31:22.038 [ApplicationImpl pooled thread 26] INFO  com.browserstack.utils.Helpers - true
+12:31:52.579 [ApplicationImpl pooled thread 50] INFO  c.b.l.BrowserStackRunExtension - maven
+12:31:52.579 [ApplicationImpl pooled thread 50] INFO  com.browserstack.utils.Helpers - true
+12:34:19.650 [ApplicationImpl pooled thread 10] INFO  c.b.l.BrowserStackRunExtension - maven
+12:34:19.652 [ApplicationImpl pooled thread 10] INFO  com.browserstack.utils.Helpers - true
+12:39:17.438 [AWT-EventQueue-0] INFO  c.b.actions.EnableBrowserStack - Setting enable browserstack run update
+12:39:17.439 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Eugene/.m2/repository/com/browserstack/browserstack-java-sdk/1.17.1/browserstack-java-sdk-1.17.1.jar
+12:39:17.439 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:39:17.450 [AWT-EventQueue-0] INFO  c.b.actions.DisableBrowserStack - Setting disable browserstack run update
+12:39:17.451 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - C:/Users/Eugene/.m2/repository/com/browserstack/browserstack-java-sdk/1.17.1/browserstack-java-sdk-1.17.1.jar
+12:39:17.451 [AWT-EventQueue-0] INFO  com.browserstack.utils.Helpers - true
+12:39:47.155 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Integrate source: testng:intellij:v1.1.4
+12:39:47.156 [AWT-EventQueue-0] INFO  c.b.launchers.LaunchMavenCommand - Executing maven archetype command - browserstack-sdk-archetype-integrate
+12:39:47.199 [ApplicationImpl pooled thread 13] INFO  c.b.l.BrowserStackRunExtension - maven
+12:39:47.199 [ApplicationImpl pooled thread 13] INFO  com.browserstack.utils.Helpers - true
+12:40:01.599 [java.exe] INFO  c.b.launchers.LaunchMavenCommand - Completed maven archetype command
