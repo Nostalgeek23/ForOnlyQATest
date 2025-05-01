@@ -11,11 +11,10 @@ This is a test task for QA position
 - [Setup](#setup)
 - [Running Tests](#running-tests)
 - [Generating Allure Reports](#generating-allure-reports)
-- [Project Structure](#project-structure)
 
 ## Features
 
-
+## sdsadasdasddsadas
 - **Selenium WebDriver**: For browser automation.
 - **TestNG**: For test framework.
 - **Allure**: For generating detailed test reports.
