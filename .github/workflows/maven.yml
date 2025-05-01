@@ -48,7 +48,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-    
 
-      #            UBUNTU JOBS
+      #          UBUNTU JOBS
 
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
@@ -60,7 +60,7 @@ jobs:
           mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
           mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
 
-      #             WINDOWS JOBS
+      #           WINDOWS JOBS
 
       - name: Build with Maven - Windows
         if: ${{ matrix.os == 'windows-latest' }}
@@ -75,7 +75,7 @@ jobs:
           mvn test -PSmokeTest
           mvn test -PWindowsTest
 
-      #             MACOS JOBS
+      #           MACOS JOBS
 
       - name: Build with Maven - MacOs
         if: ${{ matrix.os == 'macos-13' }}
@@ -94,7 +94,7 @@ jobs:
           mvn test -PSmokeTest
           mvn test -PMacosTest
 
-      #          Dorny Test Reporter
+      #        Dorny Test Reporter
 
       - name: Dorny Test Reporter
         uses: dorny/test-reporter@v1.9.1

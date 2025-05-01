@@ -1,4 +1,5 @@
 import com.testsforonly.base.BaseTest;
+import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Link;
 import io.qameta.allure.Severity;
@@ -54,7 +55,7 @@ public class FrameworkTest extends BaseTest {
   )
   @Severity(SeverityLevel.BLOCKER)
   @Story("Smoke")
-  @Description("TC-00.01 Open Google.com")
+  @Description("TC-00.01 Open github.com")
   @Link("https://github.com/")
   public void testGitHub() {
     final String expectedURL = "https://github.com/";
@@ -63,6 +64,7 @@ public class FrameworkTest extends BaseTest {
 
     final String actualURL = getDriver().getCurrentUrl();
 
+    Allure.step("make assert");
     Assert.assertEquals(actualURL, expectedURL);
   }
 }
