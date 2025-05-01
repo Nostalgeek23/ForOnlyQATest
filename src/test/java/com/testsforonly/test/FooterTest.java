@@ -63,6 +63,8 @@ public class FooterTest extends BaseTest {
     Allure.step("Check visibility of element in footer");
     for (By locator : footerElementsToCheck) {
       Allure.step("Check visibility of footer element " + locator);
+      Reporter.log("Check visibility of " + locator, true);
+
       WebElement element = getWait10().until(ExpectedConditions.visibilityOfElementLocated(locator));
       Assert.assertTrue(element.isDisplayed(), "Element not found: " + element);
     }
