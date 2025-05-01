@@ -36,6 +36,10 @@ public class DriverUtils {
     firefoxOptions.addArguments("-disable-gpu");
     firefoxOptions.addArguments("-no-sandbox");
     firefoxOptions.addArguments("-disable-dev-shm-usage");
+    firefoxOptions.addArguments("--window-size=1920,1080" );
+    firefoxOptions.setCapability("se:recordVideo", false);
+    firefoxOptions.setCapability("acceptInsecureCerts", true);
+    firefoxOptions.setCapability("pageLoadStrategy", "normal");
 //        firefoxOptions.addArguments("--disable-web-security");
 //        firefoxOptions.addArguments("--allow-running-insecure-content");
 //        firefoxOptions.addArguments("--ignore-certificate-errors");
