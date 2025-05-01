@@ -2,6 +2,7 @@ package com.testsforonly.test;
 
 import com.testsforonly.base.BaseTest;
 import com.testsforonly.data.TestData;
+import com.testsforonly.utils.RetryAnalyzer;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
 import io.qameta.allure.Severity;
@@ -23,7 +24,8 @@ public class FooterTest extends BaseTest {
           dataProviderClass = TestData.class,
           dataProvider = "pages",
           description = "TC-01.02 Check footer elements",
-          testName = "Footer: Verify presence of all footer elements"
+          testName = "Footer: Verify presence of all footer elements",
+          retryAnalyzer = RetryAnalyzer.class
   )
   @Severity(SeverityLevel.NORMAL)
   @Story("Footer")
