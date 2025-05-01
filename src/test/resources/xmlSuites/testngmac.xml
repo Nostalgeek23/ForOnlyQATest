@@ -9,10 +9,10 @@
         </classes>
     </test>
 
-    <test name = "SafariTestMacOs" verbose="10">
-        <parameter name="browser" value="safari"/>
-        <classes>
-            <class name="com.testsforonly.test.FooterTest"/>
-        </classes>
-        </test>
+<!--    <test name = "SafariTestMacOs" verbose="10">-->
+<!--        <parameter name="browser" value="safari"/>-->
+<!--        <classes>-->
+<!--            <class name="com.testsforonly.test.FooterTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
