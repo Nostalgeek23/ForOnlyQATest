@@ -15,6 +15,7 @@ This is a test task for QA position
 
 ## Features
 
+
 - **Selenium WebDriver**: For browser automation.
 - **TestNG**: For test framework.
 - **Allure**: For generating detailed test reports.
