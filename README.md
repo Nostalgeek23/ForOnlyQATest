@@ -12,7 +12,6 @@ This is a test task for QA position
 - [Running Tests](#running-tests)
 - [Generating Allure Reports](#generating-allure-reports)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 
 ## Features
 
