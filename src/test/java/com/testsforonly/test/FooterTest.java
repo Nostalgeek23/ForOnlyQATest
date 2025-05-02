@@ -39,9 +39,9 @@ public class FooterTest extends BaseTest {
     WebElement okCookiesButton = getWait10().until(ExpectedConditions.elementToBeClickable(TestData.OKCOOKIEBUTTON));
     try {
       okCookiesButton.click();
-      Reporter.log("Accept Cookies OK");
+      Reporter.log("Accept Cookies OK", true);
     } catch (Exception e) {
-      Reporter.log("Try to click okcookie using JS");
+      Reporter.log("Try to click okcookie using JS", true);
       ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", okCookiesButton);
     }
 
