@@ -53,7 +53,6 @@ jobs:
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run:  |
-          sudo sed -i 's/^Upgrade/#Upgrade/' /etc/apt/apt.conf.d/20auto-upgrades
 
           sudo apt-get update -o Acquire::Retries=3 -qq
 
