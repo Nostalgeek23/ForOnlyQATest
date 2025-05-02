@@ -39,7 +39,7 @@ public class FooterTest extends BaseTest {
     try {
       WebElement footerElement = getWait10().until(ExpectedConditions.presenceOfElementLocated(TestData.FOOTER));
 
-      ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView(true);", footerElement);
+      ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView({block: 'end'});", footerElement);
 
       getWait10().until(ExpectedConditions.visibilityOf(footerElement));
 
