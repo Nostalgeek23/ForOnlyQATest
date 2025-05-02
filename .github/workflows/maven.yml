@@ -60,6 +60,7 @@ jobs:
           DBUS_SESSION_BUS_ADDRESS: /dev/null
           webdriver.firefox.logfile: /dev/null
           webdriver.firefox.marionette: true
+          webdriver.firefox.binary: /usr/bin/firefox
         run:  |
           sudo apt-get install -y xvfb
           Xvfb :99 -screen 0 1920x1080x16 &
