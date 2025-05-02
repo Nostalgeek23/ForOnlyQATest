@@ -35,9 +35,18 @@ public class FooterTest extends BaseTest {
     Allure.step("Open " + url + " page");
     getDriver().get(url);
 
+    Allure.step("Accepting cookies");
+    WebElement okCookiesButton = getWait10().until(ExpectedConditions.elementToBeClickable(TestData.OKCOOKIEBUTTON));
+    try {
+      okCookiesButton.click();
+      Reporter.log("Accept Cookies OK");
+    } catch (Exception e) {
+      Reporter.log("Try to click okcookie using JS");
+      ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", okCookiesButton);
+    }
+
     Allure.step("Scroll down to footer");
     try {
-      getWait10().until(ExpectedConditions.elementToBeClickable(TestData.OKCOOKIEBUTTON)).click();
 
       WebElement footerElement = getWait10().until(ExpectedConditions.presenceOfElementLocated(TestData.FOOTER));
 
