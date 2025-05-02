@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -69,7 +70,12 @@ public abstract class BaseTest {
       t.printStackTrace();
       throw t;
     }
+  }
 
+  @BeforeMethod
+  public void beforeMethodDebug(ITestResult result) {
+    System.out.println("TEST METHOD NAME: " + result.getMethod().getMethodName());
+    System.out.println("TEST METHOD ENABLED: " + !result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).enabled());
   }
 
   @Parameters("browser")
