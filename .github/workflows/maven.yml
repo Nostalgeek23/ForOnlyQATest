@@ -53,21 +53,12 @@ jobs:
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run:  |
-#          sudo apt update
-#          sudo snap remove firefox
-#          sudo apt install firefox -y
-#          firefox --version
-      # Отключаем автоматическое обновление apt
           sudo sed -i 's/^Upgrade/#Upgrade/' /etc/apt/apt.conf.d/20auto-upgrades
 
-      # Быстрое обновление только основных репозиториев
           sudo apt-get update -o Acquire::Retries=3 -qq
 
-      # Удаляем snap-версию (если есть)
           sudo snap remove --purge firefox 2>/dev/null || true
           sudo apt-get remove --purge firefox -y 2>/dev/null || true
-
-      # Устанавливаем deb-версию из официального PPA
           sudo add-apt-repository ppa:mozillateam/ppa -y
           echo '
           Package: firefox*
