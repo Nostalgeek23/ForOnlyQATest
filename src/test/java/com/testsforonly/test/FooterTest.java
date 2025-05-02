@@ -37,6 +37,8 @@ public class FooterTest extends BaseTest {
 
     Allure.step("Scroll down to footer");
     try {
+      getWait10().until(ExpectedConditions.elementToBeClickable(TestData.OKCOOKIEBUTTON)).click();
+
       WebElement footerElement = getWait10().until(ExpectedConditions.presenceOfElementLocated(TestData.FOOTER));
 
       ((JavascriptExecutor) getDriver()).executeScript("arguments[0].scrollIntoView({block: 'end'});", footerElement);

@@ -26,6 +26,7 @@ public class TestData {
   public static final By TELEGRAMCONTACT = By.cssSelector("footer div[class^='Telegram']");
   public static final By CONTACTSLINKS = By.cssSelector("footer div[class^='ContactsLinks']");
   public static final By FOOTERTEXT = By.cssSelector("footer p[class^='text2']");
+  public static final By OKCOOKIEBUTTON = By.cssSelector("button[class*='Cookie']");
 
   public static final List<By> DEFAULT_FOOTER_ELEMENTS = List.of(
           COMPANYLOGO,
