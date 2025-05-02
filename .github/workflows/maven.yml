@@ -54,18 +54,15 @@ jobs:
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run:  |
 
-          sudo apt-get update -o Acquire::Retries=3 -qq
-
           sudo snap remove --purge firefox 2>/dev/null || true
-          sudo apt-get remove --purge firefox -y 2>/dev/null || true
+          sudo apt remove --purge firefox -y 2>/dev/null || true
           sudo add-apt-repository ppa:mozillateam/ppa -y
-          echo '
-          Package: firefox*
-          Pin: release o=LP-PPA-mozillateam
-          Pin-Priority: 501
-          ' | sudo tee /etc/apt/preferences.d/mozillateam'
-          sudo apt-get update -o Acquire::Retries=3 -qq
-          sudo apt-get install -y firefox 2>/dev/null          
+          
+          echo -e 'Package: firefox*\nPin: release o=LP-PPA-mozillateam\nPin-Priority: 501' | sudo tee /etc/apt/preferences.d/mozillateam-prefs
+          sudo apt update -o Acquire::Retries=3 -qq
+          sudo apt install -y firefox 2>/dev/null
+          firefox --version
+          
           mvn clean -e install -Dmaven.test.skip=true
 
       - name: Test with Maven - Ubuntu
