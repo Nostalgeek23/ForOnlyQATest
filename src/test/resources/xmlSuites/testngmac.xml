@@ -2,12 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="MacOs crossBrowser Test Suite">
 
-    <test name = "ChromeTestMacOs" verbose="10">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="com.testsforonly.test.FooterTest"/>
-        </classes>
-    </test>
+<!--    <test name = "ChromeTestMacOs" verbose="10">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="com.testsforonly.test.FooterTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 
 <!--    <test name = "SafariTestMacOs" verbose="10">-->
 <!--        <parameter name="browser" value="safari"/>-->

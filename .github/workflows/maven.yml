@@ -54,7 +54,8 @@ jobs:
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run:  |
           sudo apt update
-          sudo apt install -y firefox
+          sudo snap remove firefox
+          sudo apt install firefox -y
           firefox --version
           mvn clean -e install -Dmaven.test.skip=true
 
