@@ -52,6 +52,12 @@ jobs:
 
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
+        env:
+          MOZ_HEADLESS: 1
+          MOZ_HEADLESS_WIDTH: 1920
+          MOZ_HEADLESS_HEIGHT: 1080
+          DISPLAY: :99
+          DBUS_SESSION_BUS_ADDRESS: /dev/null
         run:  |
 
           sudo snap remove --purge firefox 2>/dev/null || true
@@ -62,7 +68,9 @@ jobs:
           sudo apt update -o Acquire::Retries=3 -qq
           sudo apt install -y firefox 2>/dev/null
           firefox --version
-          
+          sudo apt-get install -y xvfb
+          Xvfb :99 -screen 0 1920x1080x16 &
+          export DISPLAY=:99
           mvn clean -e install -Dmaven.test.skip=true
 
       - name: Test with Maven - Ubuntu
