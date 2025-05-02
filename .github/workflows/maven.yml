@@ -50,50 +50,17 @@ jobs:
 
       #            UBUNTU JOBS
 
+
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
-        env:
-          MOZ_HEADLESS: 1
-          MOZ_HEADLESS_WIDTH: 1920
-          MOZ_HEADLESS_HEIGHT: 1080
-          DISPLAY: :99
-          DBUS_SESSION_BUS_ADDRESS: /dev/null
-          webdriver.firefox.logfile: /dev/null
-          webdriver.firefox.marionette: true
-          webdriver.firefox.binary: /usr/bin/firefox
-        run:  |
-          sudo apt-get install -y xvfb
-          Xvfb :99 -screen 0 1920x1080x16 &
-          export DISPLAY=:99
-          
-          sudo snap remove --purge firefox 2>/dev/null || true
-          sudo apt remove --purge firefox -y 2>/dev/null || true
-          sudo add-apt-repository ppa:mozillateam/ppa -y
-          
-          echo -e 'Package: *\nPin: release o=LP-PPA-mozillateam\nPin-Priority: 1001' | sudo tee /etc/apt/preferences.d/mozillateam-prefs
-          sudo apt update -o Acquire::Retries=3 -qq
-          sudo apt install -y firefox 2>/dev/null
-          
-          echo "Firefox version: $(firefox --version)"
-          echo "Geckodriver version: $(geckodriver --version || echo 'Not installed')"
-
-          mvn clean -e install -Dmaven.test.skip=true
+        run:  mvn clean -e install -Dmaven.test.skip=true
 
       - name: Test with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
-        env:
-          webdriver.firefox.marionette: true
-          webdriver.firefox.logfile: /dev/null
-          webdriver.firefox.binary: /usr/bin/firefox
         run: |
-          mvn test -PSmokeTest \
-          -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml \
-          -Dwebdriver.firefox.logfile=/dev/null \
-          -Dwebdriver.firefox.marionette=true
-          mvn test -PUbuntuTest \
-          -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml \
-          -Dwebdriver.firefox.logfile=/dev/null \
-          -Dwebdriver.firefox.marionette=true
+          mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
+          mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
+
 
       #             WINDOWS JOBS
 
