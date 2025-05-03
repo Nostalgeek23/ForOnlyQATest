@@ -1,11 +1,11 @@
 {
-  "uid" : "d9c40ef95f430013",
+  "uid" : "f5267257b8c1c96f",
   "name" : "testFail",
   "fullName" : "FrameworkTest.testFail",
-  "historyId" : "d039e33cc219c10e93420817dc6d8126",
+  "historyId" : "19f0e8d923a51b3719dda0723befef7f",
   "time" : {
-    "start" : 1746268613765,
-    "stop" : 1746268613765,
+    "start" : 1746270549618,
+    "stop" : 1746270549618,
     "duration" : 0
   },
   "status" : "unknown",
@@ -24,19 +24,19 @@
     "value" : "testFail"
   }, {
     "name" : "parentSuite",
-    "value" : "Smoke"
+    "value" : "Ubuntu crossBrowser Test Suite"
   }, {
     "name" : "suite",
-    "value" : "Smoke Test Run"
+    "value" : "FirefoxTestUbuntu"
   }, {
     "name" : "subSuite",
     "value" : "FrameworkTest"
   }, {
     "name" : "host",
-    "value" : "fv-az972-841"
+    "value" : "fv-az1774-982"
   }, {
     "name" : "thread",
-    "value" : "4812@fv-az972-841.main(1)"
+    "value" : "2386@fv-az1774-982.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -49,33 +49,17 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome"
+    "value" : "firefox"
   } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
   "extra" : {
     "severity" : "normal",
-    "retries" : [ {
-      "uid" : "7d2a6699032fee0b",
-      "status" : "unknown",
-      "time" : {
-        "start" : 1746268511878,
-        "stop" : 1746268511879,
-        "duration" : 1
-      }
-    }, {
-      "uid" : "c7c6f3f4086102cb",
-      "status" : "unknown",
-      "time" : {
-        "start" : 1746268468648,
-        "stop" : 1746268468649,
-        "duration" : 1
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d9c40ef95f430013.json",
-  "parameterValues" : [ "chrome" ]
+  "source" : "f5267257b8c1c96f.json",
+  "parameterValues" : [ "firefox" ]
 }

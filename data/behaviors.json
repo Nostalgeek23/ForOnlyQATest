@@ -5,91 +5,91 @@
     "name" : "Footer",
     "children" : [ {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "31009702e2c9641e",
+      "uid" : "d8c453f0d0c79fad",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268476591,
-        "stop" : 1746268486219,
-        "duration" : 9628
+        "start" : 1746270482993,
+        "stop" : 1746270493478,
+        "duration" : 10485
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "9e927e352ab86ef4",
+      "uid" : "eb71607582800ce1",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268486736,
-        "stop" : 1746268495142,
-        "duration" : 8406
+        "start" : 1746270493958,
+        "stop" : 1746270503221,
+        "duration" : 9263
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital/projects", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "240a81d59bb998c7",
+      "uid" : "903e791cf820285e",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268495538,
-        "stop" : 1746268503805,
-        "duration" : 8267
+        "start" : 1746270503590,
+        "stop" : 1746270512405,
+        "duration" : 8815
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital/contacts", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "ece91d98dd1cb0b9",
+      "uid" : "4fc7bba1fce5f9c",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268504166,
-        "stop" : 1746268512455,
-        "duration" : 8289
+        "start" : 1746270512789,
+        "stop" : 1746270521844,
+        "duration" : 9055
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital/company", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "ec1fc80d95e14e7b",
+      "uid" : "4403310e0ff12ed5",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268512837,
-        "stop" : 1746268520860,
-        "duration" : 8023
+        "start" : 1746270522209,
+        "stop" : 1746270530671,
+        "duration" : 8462
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital/fields", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "b4b7740e3fe9c0f6",
+      "uid" : "e1ea39e5f15d447c",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268521234,
-        "stop" : 1746268529262,
-        "duration" : 8028
+        "start" : 1746270531048,
+        "stop" : 1746270539611,
+        "duration" : 8563
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "https://only.digital/blog", "chrome" ]
     }, {
       "name" : "TC-01.02 Check footer elements",
-      "uid" : "85da6e172714e158",
+      "uid" : "eaf4be3b06a9aba0",
       "parentUid" : "f5e3f52fe97be17481681f22a197b6fe",
       "status" : "passed",
       "time" : {
-        "start" : 1746268529606,
-        "stop" : 1746268537404,
-        "duration" : 7798
+        "start" : 1746270539975,
+        "stop" : 1746270549493,
+        "duration" : 9518
       },
       "flaky" : false,
       "newFailed" : false,
@@ -98,12 +98,12 @@
     "uid" : "f5e3f52fe97be17481681f22a197b6fe"
   }, {
     "name" : "testFail",
-    "uid" : "42d4e2f5651530d9",
+    "uid" : "f5267257b8c1c96f",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "unknown",
     "time" : {
-      "start" : 1746268537550,
-      "stop" : 1746268537550,
+      "start" : 1746270549618,
+      "stop" : 1746270549618,
       "duration" : 0
     },
     "flaky" : false,
@@ -113,25 +113,25 @@
     "name" : "Smoke",
     "children" : [ {
       "name" : "TC-00.01 Open Google.com",
-      "uid" : "5c8766c28ce9677c",
+      "uid" : "44fb64d436c34ae5",
       "parentUid" : "a83a8ec411f16faf2e5741a88cd98344",
       "status" : "passed",
       "time" : {
-        "start" : 1746268540027,
-        "stop" : 1746268540842,
-        "duration" : 815
+        "start" : 1746270551487,
+        "stop" : 1746270552261,
+        "duration" : 774
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "firefox" ]
     }, {
       "name" : "TC-00.00 AssertTrue = true",
-      "uid" : "914ef1283a78ece3",
+      "uid" : "38745084e873425a",
       "parentUid" : "a83a8ec411f16faf2e5741a88cd98344",
       "status" : "passed",
       "time" : {
-        "start" : 1746268543187,
-        "stop" : 1746268543187,
+        "start" : 1746270554458,
+        "stop" : 1746270554458,
         "duration" : 0
       },
       "flaky" : false,
@@ -139,25 +139,25 @@
       "parameters" : [ "firefox" ]
     }, {
       "name" : "TC-00.01 Open Google.com",
-      "uid" : "a906bffd937eead5",
+      "uid" : "7c33b5d779ecff38",
       "parentUid" : "a83a8ec411f16faf2e5741a88cd98344",
       "status" : "passed",
       "time" : {
-        "start" : 1746268633446,
-        "stop" : 1746268635792,
-        "duration" : 2346
+        "start" : 1746270658393,
+        "stop" : 1746270659705,
+        "duration" : 1312
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome" ]
     }, {
       "name" : "TC-00.00 AssertTrue = true",
-      "uid" : "f53c5b4c60aa1499",
+      "uid" : "906f6195d2438dc6",
       "parentUid" : "a83a8ec411f16faf2e5741a88cd98344",
       "status" : "passed",
       "time" : {
-        "start" : 1746268638206,
-        "stop" : 1746268638206,
+        "start" : 1746270662081,
+        "stop" : 1746270662081,
         "duration" : 0
       },
       "flaky" : false,
@@ -167,12 +167,12 @@
     "uid" : "a83a8ec411f16faf2e5741a88cd98344"
   }, {
     "name" : "testFail",
-    "uid" : "d9c40ef95f430013",
+    "uid" : "d96073b2280b725",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "unknown",
     "time" : {
-      "start" : 1746268613765,
-      "stop" : 1746268613765,
+      "start" : 1746270650323,
+      "stop" : 1746270650323,
       "duration" : 0
     },
     "flaky" : false,

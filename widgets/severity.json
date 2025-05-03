@@ -1,129 +1,129 @@
 [ {
-  "uid" : "31009702e2c9641e",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268476591,
-    "stop" : 1746268486219,
-    "duration" : 9628
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "240a81d59bb998c7",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268495538,
-    "stop" : 1746268503805,
-    "duration" : 8267
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9e927e352ab86ef4",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268486736,
-    "stop" : 1746268495142,
-    "duration" : 8406
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "85da6e172714e158",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268529606,
-    "stop" : 1746268537404,
-    "duration" : 7798
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "914ef1283a78ece3",
-  "name" : "TC-00.00 AssertTrue = true",
-  "time" : {
-    "start" : 1746268543187,
-    "stop" : 1746268543187,
-    "duration" : 0
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "ec1fc80d95e14e7b",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268512837,
-    "stop" : 1746268520860,
-    "duration" : 8023
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "42d4e2f5651530d9",
+  "uid" : "f5267257b8c1c96f",
   "name" : "testFail",
   "time" : {
-    "start" : 1746268537550,
-    "stop" : 1746268537550,
+    "start" : 1746270549618,
+    "stop" : 1746270549618,
     "duration" : 0
   },
   "status" : "unknown",
   "severity" : "normal"
 }, {
-  "uid" : "ece91d98dd1cb0b9",
+  "uid" : "4fc7bba1fce5f9c",
   "name" : "TC-01.02 Check footer elements",
   "time" : {
-    "start" : 1746268504166,
-    "stop" : 1746268512455,
-    "duration" : 8289
+    "start" : 1746270512789,
+    "stop" : 1746270521844,
+    "duration" : 9055
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5c8766c28ce9677c",
-  "name" : "TC-00.01 Open Google.com",
-  "time" : {
-    "start" : 1746268540027,
-    "stop" : 1746268540842,
-    "duration" : 815
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "b4b7740e3fe9c0f6",
-  "name" : "TC-01.02 Check footer elements",
-  "time" : {
-    "start" : 1746268521234,
-    "stop" : 1746268529262,
-    "duration" : 8028
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a906bffd937eead5",
-  "name" : "TC-00.01 Open Google.com",
-  "time" : {
-    "start" : 1746268633446,
-    "stop" : 1746268635792,
-    "duration" : 2346
-  },
-  "status" : "passed",
-  "severity" : "blocker"
-}, {
-  "uid" : "f53c5b4c60aa1499",
+  "uid" : "38745084e873425a",
   "name" : "TC-00.00 AssertTrue = true",
   "time" : {
-    "start" : 1746268638206,
-    "stop" : 1746268638206,
+    "start" : 1746270554458,
+    "stop" : 1746270554458,
     "duration" : 0
   },
   "status" : "passed",
   "severity" : "blocker"
 }, {
-  "uid" : "d9c40ef95f430013",
+  "uid" : "903e791cf820285e",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270503590,
+    "stop" : 1746270512405,
+    "duration" : 8815
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "eaf4be3b06a9aba0",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270539975,
+    "stop" : 1746270549493,
+    "duration" : 9518
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4403310e0ff12ed5",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270522209,
+    "stop" : 1746270530671,
+    "duration" : 8462
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "44fb64d436c34ae5",
+  "name" : "TC-00.01 Open Google.com",
+  "time" : {
+    "start" : 1746270551487,
+    "stop" : 1746270552261,
+    "duration" : 774
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "eb71607582800ce1",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270493958,
+    "stop" : 1746270503221,
+    "duration" : 9263
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d8c453f0d0c79fad",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270482993,
+    "stop" : 1746270493478,
+    "duration" : 10485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1ea39e5f15d447c",
+  "name" : "TC-01.02 Check footer elements",
+  "time" : {
+    "start" : 1746270531048,
+    "stop" : 1746270539611,
+    "duration" : 8563
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7c33b5d779ecff38",
+  "name" : "TC-00.01 Open Google.com",
+  "time" : {
+    "start" : 1746270658393,
+    "stop" : 1746270659705,
+    "duration" : 1312
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "906f6195d2438dc6",
+  "name" : "TC-00.00 AssertTrue = true",
+  "time" : {
+    "start" : 1746270662081,
+    "stop" : 1746270662081,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "blocker"
+}, {
+  "uid" : "d96073b2280b725",
   "name" : "testFail",
   "time" : {
-    "start" : 1746268613765,
-    "stop" : 1746268613765,
+    "start" : 1746270650323,
+    "stop" : 1746270650323,
     "duration" : 0
   },
   "status" : "unknown",

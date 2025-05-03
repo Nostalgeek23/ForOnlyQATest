@@ -1,12 +1,12 @@
 {
-  "uid" : "d5b7eea7f33b771e",
+  "uid" : "77ea086f1ab7a4a3",
   "name" : "TC-00.01 Open Google.com",
   "fullName" : "FrameworkTest.testGoogle",
   "historyId" : "3c9be9503d51512e751fea9c7bfba178",
   "time" : {
-    "start" : 1746268469777,
-    "stop" : 1746268470349,
-    "duration" : 572
+    "start" : 1746270572218,
+    "stop" : 1746270573620,
+    "duration" : 1402
   },
   "description" : "TC-00.01 Open Google.com",
   "descriptionHtml" : "<p>TC-00.01 Open Google.com</p>\n",
@@ -16,9 +16,9 @@
   "beforeStages" : [ {
     "name" : "setupDriver",
     "time" : {
-      "start" : 1746268468746,
-      "stop" : 1746268469755,
-      "duration" : 1009
+      "start" : 1746270553539,
+      "stop" : 1746270567187,
+      "duration" : 13648
     },
     "description" : "",
     "status" : "passed",
@@ -32,9 +32,9 @@
   }, {
     "name" : "setupWebDriverManager",
     "time" : {
-      "start" : 1746268463464,
-      "stop" : 1746268468618,
-      "duration" : 5154
+      "start" : 1746270528974,
+      "stop" : 1746270546238,
+      "duration" : 17264
     },
     "description" : "",
     "status" : "passed",
@@ -47,11 +47,11 @@
     "hasContent" : false
   } ],
   "afterStages" : [ {
-    "name" : "tearDownClass",
+    "name" : "tearDown",
     "time" : {
-      "start" : 1746268470790,
-      "stop" : 1746268470791,
-      "duration" : 1
+      "start" : 1746270573625,
+      "stop" : 1746270573943,
+      "duration" : 318
     },
     "description" : "",
     "status" : "passed",
@@ -63,11 +63,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "tearDown",
+    "name" : "tearDownClass",
     "time" : {
-      "start" : 1746268470353,
-      "stop" : 1746268470429,
-      "duration" : 76
+      "start" : 1746270575203,
+      "stop" : 1746270575203,
+      "duration" : 0
     },
     "description" : "",
     "status" : "passed",
@@ -99,10 +99,10 @@
     "value" : "FrameworkTest"
   }, {
     "name" : "host",
-    "value" : "fv-az1283-859"
+    "value" : "Mac-1746267922409.local"
   }, {
     "name" : "thread",
-    "value" : "2047@fv-az1283-859.main(1)"
+    "value" : "6214@Mac-1746267922409.local.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -133,6 +133,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "d5b7eea7f33b771e.json",
+  "source" : "77ea086f1ab7a4a3.json",
   "parameterValues" : [ "chrome" ]
 }

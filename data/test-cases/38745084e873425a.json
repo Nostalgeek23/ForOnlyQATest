@@ -1,11 +1,11 @@
 {
-  "uid" : "f53c5b4c60aa1499",
+  "uid" : "38745084e873425a",
   "name" : "TC-00.00 AssertTrue = true",
   "fullName" : "FrameworkTest.testPass",
-  "historyId" : "606361f2164704104baa9afbddd042d7",
+  "historyId" : "90e2ff05a5d1a26824f2282ef8162622",
   "time" : {
-    "start" : 1746268638206,
-    "stop" : 1746268638206,
+    "start" : 1746270554458,
+    "stop" : 1746270554458,
     "duration" : 0
   },
   "description" : "TC-00.00 AssertTrue = true",
@@ -14,11 +14,27 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
+    "name" : "beforeMethodDebug",
+    "time" : {
+      "start" : 1746270552934,
+      "stop" : 1746270552934,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
     "name" : "setupDriver",
     "time" : {
-      "start" : 1746268637438,
-      "stop" : 1746268638206,
-      "duration" : 768
+      "start" : 1746270552934,
+      "stop" : 1746270554456,
+      "duration" : 1522
     },
     "description" : "",
     "status" : "passed",
@@ -32,9 +48,9 @@
   }, {
     "name" : "setupWebDriverManager",
     "time" : {
-      "start" : 1746268608419,
-      "stop" : 1746268613734,
-      "duration" : 5315
+      "start" : 1746270481646,
+      "stop" : 1746270482154,
+      "duration" : 508
     },
     "description" : "",
     "status" : "passed",
@@ -49,8 +65,8 @@
   "afterStages" : [ {
     "name" : "tearDownClass",
     "time" : {
-      "start" : 1746268639862,
-      "stop" : 1746268639862,
+      "start" : 1746270555133,
+      "stop" : 1746270555133,
       "duration" : 0
     },
     "description" : "",
@@ -65,9 +81,9 @@
   }, {
     "name" : "tearDown",
     "time" : {
-      "start" : 1746268638206,
-      "stop" : 1746268639862,
-      "duration" : 1656
+      "start" : 1746270554460,
+      "stop" : 1746270555132,
+      "duration" : 672
     },
     "description" : "",
     "status" : "passed",
@@ -90,19 +106,19 @@
     "value" : "testPass"
   }, {
     "name" : "parentSuite",
-    "value" : "Smoke"
+    "value" : "Ubuntu crossBrowser Test Suite"
   }, {
     "name" : "suite",
-    "value" : "Smoke Test Run"
+    "value" : "FirefoxTestUbuntu"
   }, {
     "name" : "subSuite",
     "value" : "FrameworkTest"
   }, {
     "name" : "host",
-    "value" : "fv-az972-841"
+    "value" : "fv-az1774-982"
   }, {
     "name" : "thread",
-    "value" : "4812@fv-az972-841.main(1)"
+    "value" : "2386@fv-az1774-982.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -121,33 +137,17 @@
   } ],
   "parameters" : [ {
     "name" : "browser",
-    "value" : "chrome"
+    "value" : "firefox"
   } ],
   "links" : [ ],
   "hidden" : false,
   "retry" : false,
   "extra" : {
     "severity" : "blocker",
-    "retries" : [ {
-      "uid" : "132316bf6cc15fb6",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746268534814,
-        "stop" : 1746268534815,
-        "duration" : 1
-      }
-    }, {
-      "uid" : "9c67d682b618acaf",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746268470714,
-        "stop" : 1746268470714,
-        "duration" : 0
-      }
-    } ],
+    "retries" : [ ],
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "f53c5b4c60aa1499.json",
-  "parameterValues" : [ "chrome" ]
+  "source" : "38745084e873425a.json",
+  "parameterValues" : [ "firefox" ]
 }

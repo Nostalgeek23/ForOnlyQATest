@@ -1,12 +1,12 @@
 {
-  "uid" : "7d2a6699032fee0b",
+  "uid" : "82ec28ed54670edf",
   "name" : "testFail",
   "fullName" : "FrameworkTest.testFail",
   "historyId" : "d039e33cc219c10e93420817dc6d8126",
   "time" : {
-    "start" : 1746268511878,
-    "stop" : 1746268511879,
-    "duration" : 1
+    "start" : 1746270551440,
+    "stop" : 1746270551442,
+    "duration" : 2
   },
   "status" : "unknown",
   "flaky" : false,
@@ -33,10 +33,10 @@
     "value" : "FrameworkTest"
   }, {
     "name" : "host",
-    "value" : "Mac-1746267247987.local"
+    "value" : "Mac-1746267922409.local"
   }, {
     "name" : "thread",
-    "value" : "4646@Mac-1746267247987.local.main(1)"
+    "value" : "6214@Mac-1746267922409.local.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -58,6 +58,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7d2a6699032fee0b.json",
+  "source" : "82ec28ed54670edf.json",
   "parameterValues" : [ "chrome" ]
 }

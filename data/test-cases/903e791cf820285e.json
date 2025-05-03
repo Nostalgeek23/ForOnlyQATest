@@ -1,12 +1,12 @@
 {
-  "uid" : "ece91d98dd1cb0b9",
+  "uid" : "903e791cf820285e",
   "name" : "TC-01.02 Check footer elements",
   "fullName" : "com.testsforonly.test.FooterTest.testFooterElements",
-  "historyId" : "f33d3a5b491e84d38d1ebfc379aa60f9",
+  "historyId" : "d430a6fdcadd94750ff614dbbd242200",
   "time" : {
-    "start" : 1746268504166,
-    "stop" : 1746268512455,
-    "duration" : 8289
+    "start" : 1746270503590,
+    "stop" : 1746270512405,
+    "duration" : 8815
   },
   "description" : "Ensure that footer has all specified elements",
   "descriptionHtml" : "<p>Ensure that footer has all specified elements</p>\n",
@@ -14,11 +14,11 @@
   "flaky" : false,
   "newFailed" : false,
   "beforeStages" : [ {
-    "name" : "beforeMethodDebug",
+    "name" : "setupDriver",
     "time" : {
-      "start" : 1746268503886,
-      "stop" : 1746268503886,
-      "duration" : 0
+      "start" : 1746270503321,
+      "stop" : 1746270503587,
+      "duration" : 266
     },
     "description" : "",
     "status" : "passed",
@@ -30,11 +30,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "setupDriver",
+    "name" : "beforeMethodDebug",
     "time" : {
-      "start" : 1746268503887,
-      "stop" : 1746268504164,
-      "duration" : 277
+      "start" : 1746270503320,
+      "stop" : 1746270503320,
+      "duration" : 0
     },
     "description" : "",
     "status" : "passed",
@@ -48,9 +48,9 @@
   }, {
     "name" : "setupWebDriverManager",
     "time" : {
-      "start" : 1746268475201,
-      "stop" : 1746268475720,
-      "duration" : 519
+      "start" : 1746270481646,
+      "stop" : 1746270482154,
+      "duration" : 508
     },
     "description" : "",
     "status" : "passed",
@@ -66,11 +66,11 @@
     "description" : "Ensure that footer has all specified elements",
     "status" : "passed",
     "steps" : [ {
-      "name" : "Open https://only.digital/company page",
+      "name" : "Open https://only.digital/contacts page",
       "time" : {
-        "start" : 1746268504166,
-        "stop" : 1746268504167,
-        "duration" : 1
+        "start" : 1746270503591,
+        "stop" : 1746270503591,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
@@ -83,8 +83,8 @@
     }, {
       "name" : "Accepting cookies",
       "time" : {
-        "start" : 1746268508257,
-        "stop" : 1746268508257,
+        "start" : 1746270511701,
+        "stop" : 1746270511701,
         "duration" : 0
       },
       "status" : "passed",
@@ -98,8 +98,8 @@
     }, {
       "name" : "Scroll down to footer",
       "time" : {
-        "start" : 1746268510971,
-        "stop" : 1746268510971,
+        "start" : 1746270511960,
+        "stop" : 1746270511960,
         "duration" : 0
       },
       "status" : "passed",
@@ -111,10 +111,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Verify footer is displayed on https://only.digital/company",
+      "name" : "Verify footer is displayed on https://only.digital/contacts",
       "time" : {
-        "start" : 1746268511710,
-        "stop" : 1746268511710,
+        "start" : 1746270511998,
+        "stop" : 1746270511998,
         "duration" : 0
       },
       "status" : "passed",
@@ -126,10 +126,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "Footer is visible on: https://only.digital/company",
+      "name" : "Footer is visible on: https://only.digital/contacts",
       "time" : {
-        "start" : 1746268511736,
-        "stop" : 1746268511736,
+        "start" : 1746270512062,
+        "stop" : 1746270512062,
         "duration" : 0
       },
       "status" : "passed",
@@ -143,8 +143,8 @@
     }, {
       "name" : "Choose footer option",
       "time" : {
-        "start" : 1746268511736,
-        "stop" : 1746268511736,
+        "start" : 1746270512062,
+        "stop" : 1746270512062,
         "duration" : 0
       },
       "status" : "passed",
@@ -158,83 +158,8 @@
     }, {
       "name" : "Check visibility of element in footer",
       "time" : {
-        "start" : 1746268511736,
-        "stop" : 1746268511736,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check visibility of footer element By.cssSelector: footer svg[class*='logo']",
-      "time" : {
-        "start" : 1746268511736,
-        "stop" : 1746268511736,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check visibility of footer element By.cssSelector: footer button[class*='StartProject']",
-      "time" : {
-        "start" : 1746268511918,
-        "stop" : 1746268511918,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check visibility of footer element By.cssSelector: footer div[class^='Telegram']",
-      "time" : {
-        "start" : 1746268512005,
-        "stop" : 1746268512005,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check visibility of footer element By.cssSelector: footer div[class^='ContactsLinks']",
-      "time" : {
-        "start" : 1746268512060,
-        "stop" : 1746268512060,
-        "duration" : 0
-      },
-      "status" : "passed",
-      "steps" : [ ],
-      "attachments" : [ ],
-      "parameters" : [ ],
-      "stepsCount" : 0,
-      "attachmentsCount" : 0,
-      "shouldDisplayMessage" : false,
-      "hasContent" : false
-    }, {
-      "name" : "Check visibility of footer element By.cssSelector: footer p[class^='text2']",
-      "time" : {
-        "start" : 1746268512136,
-        "stop" : 1746268512136,
+        "start" : 1746270512063,
+        "stop" : 1746270512063,
         "duration" : 0
       },
       "status" : "passed",
@@ -248,8 +173,8 @@
     }, {
       "name" : "Check visibility of footer element By.cssSelector: footer > div[class*='copyrights']",
       "time" : {
-        "start" : 1746268512186,
-        "stop" : 1746268512186,
+        "start" : 1746270512063,
+        "stop" : 1746270512063,
         "duration" : 0
       },
       "status" : "passed",
@@ -263,8 +188,8 @@
     }, {
       "name" : "Check visibility of footer element By.cssSelector: footer a[href*='behance']",
       "time" : {
-        "start" : 1746268512250,
-        "stop" : 1746268512250,
+        "start" : 1746270512184,
+        "stop" : 1746270512184,
         "duration" : 0
       },
       "status" : "passed",
@@ -278,8 +203,8 @@
     }, {
       "name" : "Check visibility of footer element By.cssSelector: footer a[href*='dprofile']",
       "time" : {
-        "start" : 1746268512288,
-        "stop" : 1746268512288,
+        "start" : 1746270512232,
+        "stop" : 1746270512232,
         "duration" : 0
       },
       "status" : "passed",
@@ -293,8 +218,8 @@
     }, {
       "name" : "Check visibility of footer element By.cssSelector: footer a[href*='t.me']",
       "time" : {
-        "start" : 1746268512340,
-        "stop" : 1746268512340,
+        "start" : 1746270512283,
+        "stop" : 1746270512283,
         "duration" : 0
       },
       "status" : "passed",
@@ -308,8 +233,8 @@
     }, {
       "name" : "Check visibility of footer element By.cssSelector: footer a[href*='vk.com']",
       "time" : {
-        "start" : 1746268512379,
-        "stop" : 1746268512379,
+        "start" : 1746270512339,
+        "stop" : 1746270512339,
         "duration" : 0
       },
       "status" : "passed",
@@ -323,17 +248,17 @@
     } ],
     "attachments" : [ ],
     "parameters" : [ ],
-    "stepsCount" : 17,
+    "stepsCount" : 12,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
     "hasContent" : true
   },
   "afterStages" : [ {
-    "name" : "tearDownClass",
+    "name" : "tearDown",
     "time" : {
-      "start" : 1746268537529,
-      "stop" : 1746268537529,
-      "duration" : 0
+      "start" : 1746270512407,
+      "stop" : 1746270512507,
+      "duration" : 100
     },
     "description" : "",
     "status" : "passed",
@@ -345,11 +270,11 @@
     "shouldDisplayMessage" : false,
     "hasContent" : false
   }, {
-    "name" : "tearDown",
+    "name" : "tearDownClass",
     "time" : {
-      "start" : 1746268512457,
-      "stop" : 1746268512567,
-      "duration" : 110
+      "start" : 1746270549602,
+      "stop" : 1746270549602,
+      "duration" : 0
     },
     "description" : "",
     "status" : "passed",
@@ -381,10 +306,10 @@
     "value" : "com.testsforonly.test.FooterTest"
   }, {
     "name" : "host",
-    "value" : "fv-az1283-859"
+    "value" : "fv-az1774-982"
   }, {
     "name" : "thread",
-    "value" : "2397@fv-az1283-859.main(1)"
+    "value" : "2386@fv-az1774-982.main(1)"
   }, {
     "name" : "framework",
     "value" : "testng"
@@ -403,7 +328,7 @@
   } ],
   "parameters" : [ {
     "name" : "arg0",
-    "value" : "https://only.digital/company"
+    "value" : "https://only.digital/contacts"
   }, {
     "name" : "browser",
     "value" : "chrome"
@@ -417,6 +342,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "ece91d98dd1cb0b9.json",
-  "parameterValues" : [ "https://only.digital/company", "chrome" ]
+  "source" : "903e791cf820285e.json",
+  "parameterValues" : [ "https://only.digital/contacts", "chrome" ]
 }
