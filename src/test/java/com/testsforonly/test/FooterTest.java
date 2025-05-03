@@ -25,8 +25,8 @@ public class FooterTest extends BaseTest {
           dataProviderClass = TestData.class,
           dataProvider = "pages",
           description = "TC-01.02 Check footer elements",
-          testName = "Footer: Verify presence of all footer elements"
-//          retryAnalyzer = RetryAnalyzer.class
+          testName = "Footer: Verify presence of all footer elements",
+          retryAnalyzer = RetryAnalyzer.class
   )
   @Severity(SeverityLevel.NORMAL)
   @Story("Footer")
