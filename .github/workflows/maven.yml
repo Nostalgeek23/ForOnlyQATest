@@ -58,8 +58,9 @@ jobs:
       - name: Test with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
-          mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
+
           mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
+          ls -la target/allure-results
 
 
       #             WINDOWS JOBS
@@ -74,7 +75,7 @@ jobs:
       - name: Test with Maven - Windows
         if: ${{ matrix.os == 'windows-latest' }}
         run: |
-          mvn test -PSmokeTest
+
           mvn test -PWindowsTest
 
       #             MACOS JOBS
@@ -91,8 +92,9 @@ jobs:
       - name: Test with Maven - MacOs
         if: ${{ matrix.os == 'macos-13' }}
         run: |
-          mvn test -PSmokeTest
+
           mvn test -PMacosTest
+          ls -la target/allure-results
 
       #          Dorny Test Reporter
 
@@ -123,9 +125,9 @@ jobs:
 
       - name: Install Allure
         run: |
-          curl -o allure-2.34.0.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.34.0/allure-commandline-2.34.0.tgz
-          sudo tar -zxvf allure-2.34.0.tgz -C /opt/
-          sudo ln -s /opt/allure-2.34.0/bin/allure /usr/bin/allure
+          curl -o allure-2.29.0.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.29.0/allure-commandline-2.29.0.tgz
+          sudo tar -zxvf allure-2.29.0.tgz -C /opt/
+          sudo ln -s /opt/allure-2.29.0/bin/allure /usr/bin/allure
           allure --version
 
       - name: Download Allure Results (Ubuntu)
