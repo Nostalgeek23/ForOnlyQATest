@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.Map;
+
 public class DriverUtils {
   private static final ChromeOptions chromeOptions;
   private static final FirefoxOptions firefoxOptions;
@@ -20,7 +22,7 @@ public class DriverUtils {
 //    chromeOptions.setPageLoadStrategy(PageLoadStrategy.EAGER);
 //    chromeOptions.setBinary("/home/eugene/chrome/linux-126.0.6478.126/chrome-linux64/chrome");
     chromeOptions.addArguments("--incognito");
-//    chromeOptions.addArguments("--headless");
+    chromeOptions.addArguments("--headless");
     chromeOptions.addArguments("--window-size=1920,1080");
     chromeOptions.addArguments("--disable-gpu");
     chromeOptions.addArguments("--no-sandbox");
@@ -30,12 +32,23 @@ public class DriverUtils {
     chromeOptions.addArguments("--ignore-certificate-errors");
 
     firefoxOptions = new FirefoxOptions();
-    firefoxOptions.addArguments("-incognito");
+//    firefoxOptions.addArguments("-incognito");
     firefoxOptions.addArguments("-headless");
-    firefoxOptions.addArguments("-start-maximized");
+//    firefoxOptions.addArguments("-start-maximized");
     firefoxOptions.addArguments("-disable-gpu");
     firefoxOptions.addArguments("-no-sandbox");
     firefoxOptions.addArguments("-disable-dev-shm-usage");
+//    firefoxOptions.addArguments("--window-size=1920,1080");
+//    firefoxOptions.addArguments("--profile", "/tmp/firefox-profile");
+//    firefoxOptions.setCapability("se:recordVideo", false);
+//    firefoxOptions.setCapability("acceptInsecureCerts", true);
+//    firefoxOptions.setCapability("pageLoadStrategy", "normal");
+//    firefoxOptions.setCapability("moz:debuggerAddress", false);
+//    firefoxOptions.setCapability("moz:firefoxOptions", Map.of(
+//            "prefs", Map.of(
+//                    "layout.css.scroll-behavior.spring-constant", "0", // Отключает плавную прокрутку
+//                    "general.smoothScroll", false
+//            )));
 //        firefoxOptions.addArguments("--disable-web-security");
 //        firefoxOptions.addArguments("--allow-running-insecure-content");
 //        firefoxOptions.addArguments("--ignore-certificate-errors");

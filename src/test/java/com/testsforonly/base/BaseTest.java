@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
@@ -30,55 +31,85 @@ public abstract class BaseTest {
     WebDriverManager.safaridriver().setup();
 
     Reporter.log("INFO: Setup Webdriver manager", true);
+
+    // Включаем подробное логирование
+    System.setProperty("org.uncommons.reportng.escape-output", "false");
+    System.setProperty("org.uncommons.reportng.title", "Test Reports");
+    Reporter.setEscapeHtml(false);
+    Reporter.log("INFO: Включаем подробное логирование", true);
   }
 
   @Parameters("browser")
   @BeforeMethod(alwaysRun = true)
-  protected void setupDriver(@Optional("chrome") String browser, ITestContext context, ITestResult result) {
-    Reporter.log("_________________________________________________________", true);
-    Reporter.log("Run " + result.getMethod().getMethodName(), true);
+  protected void setupDriver(@Optional("firefox") String browser, ITestContext context, ITestResult result) {
+    try {
+      System.out.println("BEFORE METHOD STARTED");
 
-    WebDriver driver = DriverUtils.createDriver(browser);
-    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-    this.threadLocalDriver.set(driver);
+      Reporter.log("_________________________________________________________", true);
+      Reporter.log("Run " + result.getMethod().getMethodName(), true);
 
-    Reporter.log("Test Thread ID: " + Thread.currentThread().getId(), true);
-    Reporter.log("TEST SUITE: " + context.getCurrentXmlTest().getSuite().getName(), true);
-    Reporter.log("RUN " + result.getMethod().getMethodName(), true);
+      WebDriver driver = DriverUtils.createDriver(browser);
+      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+      this.threadLocalDriver.set(driver);
 
-    if (driver == null) {
-      Reporter.log("ERROR: unknown browser parameter" + browser, true);
-      throw new IllegalArgumentException("Unknown 'browser' parameter - " + browser);
-    } else {
-      Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
-              " driver created", true);
+      Reporter.log("Test Thread ID: " + Thread.currentThread().getId(), true);
+      Reporter.log("TEST SUITE: " + context.getCurrentXmlTest().getSuite().getName(), true);
+      Reporter.log("RUN " + result.getMethod().getMethodName(), true);
+
+      if (driver == null) {
+        Reporter.log("ERROR: unknown browser parameter" + browser, true);
+        throw new IllegalArgumentException("Unknown 'browser' parameter - " + browser);
+      } else {
+        Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
+                " driver created", true);
+      }
+
+      System.out.println("DRIVER CREATED: " + (driver != null));
+    } catch (Throwable t) {
+      System.err.println("ERROR IN @BEFORE METHOD:");
+      t.printStackTrace();
+      throw t;
     }
+  }
+
+  @BeforeMethod
+  public void beforeMethodDebug(ITestResult result) {
+    System.out.println("TEST METHOD NAME: " + result.getMethod().getMethodName());
+    System.out.println("TEST METHOD ENABLED: " + !result.getMethod().getConstructorOrMethod().getMethod().getAnnotation(Test.class).enabled());
   }
 
   @Parameters("browser")
   @AfterMethod(alwaysRun = true)
   protected void tearDown(@Optional("chrome") String browser, ITestResult result) {
-    WebDriver driver = getDriver();
+    try {
+      System.out.println("TEARDOWN STARTED");
 
-    Reporter.log("INFO: " + result.getMethod().getMethodName() + ": " + ReportUtils.getTestStatus(result),
-            true);
+      WebDriver driver = getDriver();
 
-    if (driver != null) {
-      try {
-        driver.quit();
-        Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
-                " driver closed", true);
-      } finally {
-        Reporter.log("After Test Thread ID: " + Thread.currentThread().getId(), true);
+      Reporter.log("INFO: " + result.getMethod().getMethodName() + ": " + ReportUtils.getTestStatus(result),
+              true);
 
-        threadLocalDriver.remove();
-        wait10.remove();
+      if (driver != null) {
+        try {
+          driver.quit();
+          Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
+                  " driver closed", true);
+        } finally {
+          Reporter.log("After Test Thread ID: " + Thread.currentThread().getId(), true);
+
+          threadLocalDriver.remove();
+          wait10.remove();
+        }
+      } else {
+        Reporter.log("INFO: Driver is null", true);
       }
-    } else {
-      Reporter.log("INFO: Driver is null", true);
-    }
 
-    ReportUtils.logf("Execution time is %d sec\n", (result.getEndMillis() - result.getStartMillis()) / 1000);
+      ReportUtils.logf("Execution time is %d sec\n", (result.getEndMillis() - result.getStartMillis()) / 1000);
+
+    } catch (Throwable t) {
+      System.err.println("ERROR IN @AFTER METHOD:");
+      t.printStackTrace();
+    }
   }
 
   @AfterClass(alwaysRun = true)

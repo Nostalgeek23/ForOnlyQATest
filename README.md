@@ -1,5 +1,5 @@
 # Test for Only.digital
-[![Build Java with Maven](https://github.com/Nostalgeek23/LUMAJavaSeleniumTestNGAllure/actions/workflows/build.yml/badge.svg)](https://github.com/Nostalgeek23/LUMAJavaSeleniumTestNGAllure/actions/workflows/build.yml)
+[![Build Java with Maven](https://github.com/Nostalgeek23/ForOnlyQATest/actions/workflows/maven.yml/badge.svg)](https://github.com/Nostalgeek23/ForOnlyQATest/actions/workflows/maven.yml)
 
 ## Overview
 

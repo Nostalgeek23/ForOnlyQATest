@@ -50,6 +50,7 @@ jobs:
 
       #            UBUNTU JOBS
 
+
       - name: Build with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run:  mvn clean -e install -Dmaven.test.skip=true
@@ -59,6 +60,7 @@ jobs:
         run: |
           mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
           mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
+
 
       #             WINDOWS JOBS
 
@@ -107,7 +109,7 @@ jobs:
       #          ALLURE
 
       - name: Upload Allure Results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.os }}
           path: target/allure-results
@@ -135,19 +137,19 @@ jobs:
           allure --version
 
       - name: Download Allure Results (Ubuntu)
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-ubuntu-latest
           path: reports/ubuntu
 
       - name: Download Allure Results (Windows)
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-windows-latest
           path: reports/windows
 
       - name: Download Allure Results (macOS)
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: allure-results-macos-13
           path: reports/macos

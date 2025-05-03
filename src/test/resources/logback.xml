@@ -13,7 +13,7 @@
     <logger name="io.javalin" level="OFF" />
 
     <root level="INFO">
-        <appender-ref ref="STDOUT" />
+        <appender-ref ref="DEBUG" />
     </root>
 
 </configuration>
