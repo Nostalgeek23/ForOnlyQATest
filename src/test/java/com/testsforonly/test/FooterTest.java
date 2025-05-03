@@ -10,6 +10,7 @@ import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
@@ -38,13 +39,19 @@ public class FooterTest extends BaseTest {
     getDriver().get(url);
 
     Allure.step("Accepting cookies");
-    WebElement okCookiesButton = getWait10().until(ExpectedConditions.elementToBeClickable(TestData.OKCOOKIEBUTTON));
     try {
-      okCookiesButton.click();
-      Reporter.log("Accept Cookies OK", true);
+      WebElement okCookiesButton = getWait10().until(ExpectedConditions.presenceOfElementLocated(TestData.OKCOOKIEBUTTON));
+      try {
+        getWait10().until(ExpectedConditions.elementToBeClickable(okCookiesButton)).click();
+        Reporter.log("Accept Cookies OK", true);
+      } catch (Exception e) {
+        Reporter.log("Try to click okcookie using JS", true);
+        ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", okCookiesButton);
+      }
+    } catch (TimeoutException e) {
+      Reporter.log("No cookie banner found - skipping", true);
     } catch (Exception e) {
-      Reporter.log("Try to click okcookie using JS", true);
-      ((JavascriptExecutor) getDriver()).executeScript("arguments[0].click();", okCookiesButton);
+      Reporter.log("Non-critical cookie handling error: " + e.getMessage(), true);
     }
 
     Allure.step("Scroll down to footer");
