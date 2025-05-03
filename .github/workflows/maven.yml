@@ -58,7 +58,7 @@ jobs:
       - name: Test with Maven - Ubuntu
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
-          mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
+
           mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
           ls -la target/allure-results
 
@@ -77,7 +77,6 @@ jobs:
         run: |
           mvn test -PSmokeTest
           mvn test -PWindowsTest
-          ls -la target/allure-results
 
       #             MACOS JOBS
 
