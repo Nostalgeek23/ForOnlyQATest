@@ -2,734 +2,734 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "fv-az1340-984",
+    "name" : "fv-az1680-966",
     "children" : [ {
-      "name" : "1991@fv-az1340-984.main(1)",
+      "name" : "2343@fv-az1680-966.main(1)",
       "children" : [ {
-        "name" : "TC-00.01 Open Google.com",
-        "uid" : "eb06464aba54f472",
-        "parentUid" : "5c06145e5ee7e760d8f2fc7ceef5aae5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271496020,
-          "stop" : 1746271496550,
-          "duration" : 530
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      }, {
         "name" : "TC-00.00 AssertTrue = true",
-        "uid" : "a01291c59bd44ddf",
-        "parentUid" : "5c06145e5ee7e760d8f2fc7ceef5aae5",
+        "uid" : "e8ee1e001886eeda",
+        "parentUid" : "284d341855d583855f909f322577e434",
         "status" : "passed",
         "time" : {
-          "start" : 1746271496973,
-          "stop" : 1746271496974,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "testFail",
-        "uid" : "c44c89bc29813d35",
-        "parentUid" : "5c06145e5ee7e760d8f2fc7ceef5aae5",
-        "status" : "unknown",
-        "time" : {
-          "start" : 1746271494786,
-          "stop" : 1746271494788,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "5c06145e5ee7e760d8f2fc7ceef5aae5"
-    }, {
-      "name" : "2342@fv-az1340-984.main(1)",
-      "children" : [ {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "87224b70bb55683d",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271520240,
-          "stop" : 1746271527199,
-          "duration" : 6959
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "faa0cfdcebe9f918",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271527565,
-          "stop" : 1746271535178,
-          "duration" : 7613
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/company", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "d1402ad03c427fdb",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271502999,
-          "stop" : 1746271511795,
-          "duration" : 8796
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "8e41546d4fb46cb5",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271512307,
-          "stop" : 1746271519775,
-          "duration" : 7468
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "1f257c2cfab96e01",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271550181,
-          "stop" : 1746271558818,
-          "duration" : 8637
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/job", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "7fb1a39182f419fd",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271542964,
-          "stop" : 1746271549820,
-          "duration" : 6856
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/blog", "chrome" ]
-      }, {
-        "name" : "testFail",
-        "uid" : "4fcf8ed11eb820a7",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "unknown",
-        "time" : {
-          "start" : 1746271558926,
-          "stop" : 1746271558926,
+          "start" : 1746272666134,
+          "stop" : 1746272666134,
           "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "firefox" ]
       }, {
-        "name" : "TC-00.01 Open Google.com",
-        "uid" : "9d2a0379ab6470ff",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "f7161a94fc0e6dda",
+        "parentUid" : "284d341855d583855f909f322577e434",
         "status" : "passed",
         "time" : {
-          "start" : 1746271569800,
-          "stop" : 1746271570878,
-          "duration" : 1078
+          "start" : 1746272648831,
+          "stop" : 1746272657321,
+          "duration" : 8490
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/job", "chrome" ]
+      }, {
+        "name" : "testFail",
+        "uid" : "97e9d1d381542099",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1746272657433,
+          "stop" : 1746272657433,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "firefox" ]
       }, {
         "name" : "TC-01.02 Check footer elements",
-        "uid" : "82fea83c9b714de1",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
+        "uid" : "954a1e37eaa59f28",
+        "parentUid" : "284d341855d583855f909f322577e434",
         "status" : "passed",
         "time" : {
-          "start" : 1746271535550,
-          "stop" : 1746271542587,
-          "duration" : 7037
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "chrome" ]
-      }, {
-        "name" : "TC-00.00 AssertTrue = true",
-        "uid" : "3e13fb8b574d7be0",
-        "parentUid" : "76af4c83c093475ad8c964f2fa749b62",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271573528,
-          "stop" : 1746271573529,
-          "duration" : 1
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "76af4c83c093475ad8c964f2fa749b62"
-    } ],
-    "uid" : "0de8ba6891896db1ef71a84e9713b029"
-  }, {
-    "name" : "fv-az1105-693",
-    "children" : [ {
-      "name" : "4132@fv-az1105-693.main(1)",
-      "children" : [ {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "6627d9f6188f0e0d",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272160846,
-          "stop" : 1746272297501,
-          "duration" : 136655
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "edge" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "a0c33b98e9d977f4",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272432545,
-          "stop" : 1746272439418,
-          "duration" : 6873
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/company", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "e279f9114715d8e3",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271754921,
-          "stop" : 1746271772382,
-          "duration" : 17461
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "3b8bad1e24afddaf",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272465669,
-          "stop" : 1746272473197,
-          "duration" : 7528
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/job", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "83a253c3ccb065a3",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271799633,
-          "stop" : 1746271824945,
-          "duration" : 25312
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "351d69cffa859394",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272395739,
-          "stop" : 1746272408020,
-          "duration" : 12281
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "157d14fbc0070314",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272304861,
-          "stop" : 1746272320628,
-          "duration" : 15767
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/blog", "edge" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "1627076c4c49c897",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271884324,
-          "stop" : 1746271982211,
-          "duration" : 97887
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital", "edge" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "85b28c47eb0cd0c1",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272455023,
-          "stop" : 1746272463159,
-          "duration" : 8136
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/blog", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "73fbc94b94f3aa94",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271675155,
-          "stop" : 1746271733147,
-          "duration" : 57992
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "c3303baf16dc4f66",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271735286,
-          "stop" : 1746271754160,
-          "duration" : 18874
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "cea86de85e34f757",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271773140,
-          "stop" : 1746271793828,
-          "duration" : 20688
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/company", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "5cff5c2920ff376",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272028713,
-          "stop" : 1746272111642,
-          "duration" : 82929
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "edge" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "46f2ec4c90b24622",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272444104,
-          "stop" : 1746272452331,
-          "duration" : 8227
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "3c61aad5bdb41f53",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271825662,
-          "stop" : 1746271843541,
-          "duration" : 17879
+          "start" : 1746272639829,
+          "stop" : 1746272648480,
+          "duration" : 8651
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "https://only.digital/blog", "chrome" ]
       }, {
         "name" : "TC-01.02 Check footer elements",
-        "uid" : "bf3967fed836701f",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
+        "uid" : "17dccc8ffbb9cf5d",
+        "parentUid" : "284d341855d583855f909f322577e434",
         "status" : "passed",
         "time" : {
-          "start" : 1746272333234,
-          "stop" : 1746272382324,
-          "duration" : 49090
+          "start" : 1746272593606,
+          "stop" : 1746272603179,
+          "duration" : 9573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "8fbe204cdb0d761d",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272621869,
+          "stop" : 1746272630910,
+          "duration" : 9041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/company", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "a467c935c20a9948",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272603648,
+          "stop" : 1746272612387,
+          "duration" : 8739
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/projects", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "425ed66971d2f66",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272612736,
+          "stop" : 1746272621535,
+          "duration" : 8799
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "af71dad438977a87",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272631259,
+          "stop" : 1746272639451,
+          "duration" : 8192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "chrome" ]
+      }, {
+        "name" : "TC-00.01 Open Google.com",
+        "uid" : "fa5eeb506b3423d9",
+        "parentUid" : "284d341855d583855f909f322577e434",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272663171,
+          "stop" : 1746272663936,
+          "duration" : 765
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "firefox" ]
+      } ],
+      "uid" : "284d341855d583855f909f322577e434"
+    }, {
+      "name" : "1997@fv-az1680-966.main(1)",
+      "children" : [ {
+        "name" : "TC-00.01 Open Google.com",
+        "uid" : "21a930b233a71fd9",
+        "parentUid" : "19b199c9c6ccd734cba0f18c8febcecc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272587056,
+          "stop" : 1746272587663,
+          "duration" : 607
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "TC-00.00 AssertTrue = true",
+        "uid" : "d987d184dddbcfa7",
+        "parentUid" : "19b199c9c6ccd734cba0f18c8febcecc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272588029,
+          "stop" : 1746272588030,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "testFail",
+        "uid" : "78b41f1e2acce430",
+        "parentUid" : "19b199c9c6ccd734cba0f18c8febcecc",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1746272586070,
+          "stop" : 1746272586071,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "19b199c9c6ccd734cba0f18c8febcecc"
+    } ],
+    "uid" : "dc3a789cc091a6b808869c377404239c"
+  }, {
+    "name" : "fv-az1489-313",
+    "children" : [ {
+      "name" : "7132@fv-az1489-313.main(1)",
+      "children" : [ {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "747214fffe6a35b2",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272723809,
+          "stop" : 1746272761163,
+          "duration" : 37354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "4cff6b3aa2867cd",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272763876,
+          "stop" : 1746272787260,
+          "duration" : 23384
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/projects", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "c7394f258c1581a9",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273588874,
+          "stop" : 1746273673480,
+          "duration" : 84606
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "https://only.digital/job", "edge" ]
       }, {
         "name" : "TC-01.02 Check footer elements",
-        "uid" : "93c1ea4586e32b2a",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
+        "uid" : "172d5ddfe73ef3d8",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
         "status" : "passed",
         "time" : {
-          "start" : 1746271849636,
-          "stop" : 1746271882159,
-          "duration" : 32523
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/job", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "62c3dbba1242f177",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272113595,
-          "stop" : 1746272147281,
-          "duration" : 33686
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/company", "edge" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "ff73f3fe06de6dc5",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272410680,
-          "stop" : 1746272419073,
-          "duration" : 8393
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "5470fe896107fdab",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746272421591,
-          "stop" : 1746272429885,
-          "duration" : 8294
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "firefox" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "3828b653948f5859",
-        "parentUid" : "b20dbccc4ff82ca7b66e19460722091e",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271984591,
-          "stop" : 1746272015637,
-          "duration" : 31046
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "edge" ]
-      } ],
-      "uid" : "b20dbccc4ff82ca7b66e19460722091e"
-    }, {
-      "name" : "7072@fv-az1105-693.main(1)",
-      "children" : [ {
-        "name" : "TC-00.01 Open Google.com",
-        "uid" : "96bcb0d10676f5cf",
-        "parentUid" : "47e675f3b292234319bd96c4c131a4c5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271661401,
-          "stop" : 1746271663555,
-          "duration" : 2154
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "TC-00.00 AssertTrue = true",
-        "uid" : "811e7821da1ac77f",
-        "parentUid" : "47e675f3b292234319bd96c4c131a4c5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271665894,
-          "stop" : 1746271665894,
-          "duration" : 0
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "testFail",
-        "uid" : "2f24744f943cbdaf",
-        "parentUid" : "47e675f3b292234319bd96c4c131a4c5",
-        "status" : "unknown",
-        "time" : {
-          "start" : 1746271642842,
-          "stop" : 1746271642858,
-          "duration" : 16
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "47e675f3b292234319bd96c4c131a4c5"
-    } ],
-    "uid" : "382b712b6fc26d42755887c4651602f1"
-  }, {
-    "name" : "Mac-1746267924422.local",
-    "children" : [ {
-      "name" : "8282@Mac-1746267924422.local.main(1)",
-      "children" : [ {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "64d261382d0e12ef",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271768518,
-          "stop" : 1746271775610,
-          "duration" : 7092
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "e799586c50ffc14f",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271670708,
-          "stop" : 1746271680476,
-          "duration" : 9768
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/blog", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "202c3e9222c71df3",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271686766,
-          "stop" : 1746271694929,
-          "duration" : 8163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/job", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "26fdc9832cb557e6",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271885863,
-          "stop" : 1746271892188,
-          "duration" : 6325
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/blog", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "c7eeab5a01247d3e",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271908604,
-          "stop" : 1746271915260,
-          "duration" : 6656
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/job", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "55f9424d0d099796",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271792439,
-          "stop" : 1746271799964,
-          "duration" : 7525
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "7bda299f2300baa",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271862603,
-          "stop" : 1746271869268,
-          "duration" : 6665
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "9aa36187c0680ed4",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271652801,
-          "stop" : 1746271664160,
-          "duration" : 11359
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/fields", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "bf4501e505c030bd",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271594275,
-          "stop" : 1746271606635,
-          "duration" : 12360
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/projects", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "2c7699f692f8a18a",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271839193,
-          "stop" : 1746271845823,
-          "duration" : 6630
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/company", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "29fb3d8caebf88d2",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271816527,
-          "stop" : 1746271822740,
-          "duration" : 6213
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "safari" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "241cc70848b95890",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271612765,
-          "stop" : 1746271626249,
-          "duration" : 13484
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "https://only.digital/contacts", "chrome" ]
-      }, {
-        "name" : "TC-01.02 Check footer elements",
-        "uid" : "1953f75fba29e801",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "passed",
-        "time" : {
-          "start" : 1746271632610,
-          "stop" : 1746271646413,
-          "duration" : 13803
+          "start" : 1746272800325,
+          "stop" : 1746272821219,
+          "duration" : 20894
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "https://only.digital/company", "chrome" ]
       }, {
         "name" : "TC-01.02 Check footer elements",
-        "uid" : "b925438f7687c00a",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
+        "uid" : "6b6f015659bdfe79",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
         "status" : "passed",
         "time" : {
-          "start" : 1746271576792,
-          "stop" : 1746271587532,
-          "duration" : 10740
+          "start" : 1746273269546,
+          "stop" : 1746273344244,
+          "duration" : 74698
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "https://only.digital", "chrome" ]
+        "parameters" : [ "https://only.digital/company", "edge" ]
       }, {
         "name" : "TC-01.02 Check footer elements",
-        "uid" : "d3489574e8253d22",
-        "parentUid" : "84a6d932b8b831bf8869514892db0cec",
-        "status" : "skipped",
+        "uid" : "33ba0d6e67f2986c",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
         "time" : {
-          "start" : 1746271714384,
-          "stop" : 1746271752004,
-          "duration" : 37620
+          "start" : 1746273035177,
+          "stop" : 1746273123566,
+          "duration" : 88389
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "https://only.digital", "safari" ]
-      } ],
-      "uid" : "84a6d932b8b831bf8869514892db0cec"
-    }, {
-      "name" : "7168@Mac-1746267924422.local.main(1)",
-      "children" : [ {
-        "name" : "TC-00.01 Open Google.com",
-        "uid" : "265317d594d4dd4a",
-        "parentUid" : "95f2f063df49c0963712920cc7dafac1",
+        "parameters" : [ "https://only.digital/projects", "edge" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "79d2524dc9d5cbdd",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
         "status" : "passed",
         "time" : {
-          "start" : 1746271549732,
-          "stop" : 1746271552461,
-          "duration" : 2729
+          "start" : 1746272863501,
+          "stop" : 1746272931211,
+          "duration" : 67710
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/job", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "d7536788448c5290",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273714724,
+          "stop" : 1746273720976,
+          "duration" : 6252
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "d35cd4ff296cc3de",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272821926,
+          "stop" : 1746272836959,
+          "duration" : 15033
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "912ba15f0787df3b",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273552662,
+          "stop" : 1746273576779,
+          "duration" : 24117
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/blog", "edge" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "aebb1720f3261a23",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273724934,
+          "stop" : 1746273733193,
+          "duration" : 8259
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/company", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "890d9845de469be8",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273358957,
+          "stop" : 1746273531730,
+          "duration" : 172773
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "edge" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "e987939b401dd27d",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273704121,
+          "stop" : 1746273712237,
+          "duration" : 8116
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/projects", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "975f6b28befabe5b",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273690839,
+          "stop" : 1746273701600,
+          "duration" : 10761
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "c1d85454d9f2f794",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272837721,
+          "stop" : 1746272856095,
+          "duration" : 18374
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/blog", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "f8eb2f69fb752723",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273746439,
+          "stop" : 1746273754429,
+          "duration" : 7990
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/blog", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "de0f189f54f3a69d",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272933221,
+          "stop" : 1746273020136,
+          "duration" : 86915
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "edge" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "495583ced253f6a4",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273144122,
+          "stop" : 1746273256521,
+          "duration" : 112399
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "edge" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "384be2bc55b6672b",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272788009,
+          "stop" : 1746272799522,
+          "duration" : 11513
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "d1b0be5456930c88",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273756917,
+          "stop" : 1746273766132,
+          "duration" : 9215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/job", "firefox" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "2abaaf99fd8ced7b",
+        "parentUid" : "54a6aa0a12e26048c08b882b86e98a6a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746273735926,
+          "stop" : 1746273743991,
+          "duration" : 8065
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "firefox" ]
+      } ],
+      "uid" : "54a6aa0a12e26048c08b882b86e98a6a"
+    }, {
+      "name" : "7972@fv-az1489-313.main(1)",
+      "children" : [ {
+        "name" : "testFail",
+        "uid" : "9227ec829d3c0450",
+        "parentUid" : "0fd60d4639296308bfbd5540157e7216",
+        "status" : "unknown",
+        "time" : {
+          "start" : 1746272697455,
+          "stop" : 1746272697455,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "TC-00.01 Open Google.com",
+        "uid" : "89606fafa4cb09f8",
+        "parentUid" : "0fd60d4639296308bfbd5540157e7216",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272711600,
+          "stop" : 1746272713232,
+          "duration" : 1632
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "chrome" ]
       }, {
         "name" : "TC-00.00 AssertTrue = true",
-        "uid" : "63ac5b1313c43d9d",
-        "parentUid" : "95f2f063df49c0963712920cc7dafac1",
+        "uid" : "59f910ae42f2cdc6",
+        "parentUid" : "0fd60d4639296308bfbd5540157e7216",
         "status" : "passed",
         "time" : {
-          "start" : 1746271560707,
-          "stop" : 1746271560708,
+          "start" : 1746272715497,
+          "stop" : 1746272715497,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "0fd60d4639296308bfbd5540157e7216"
+    } ],
+    "uid" : "44db796f75fa441424737953fb2d7c6c"
+  }, {
+    "name" : "Mac-1746268213041.local",
+    "children" : [ {
+      "name" : "9106@Mac-1746268213041.local.main(1)",
+      "children" : [ {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "1d800684856b802e",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272691941,
+          "stop" : 1746272701484,
+          "duration" : 9543
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/projects", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "c9ea7e073c63c633",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272739444,
+          "stop" : 1746272748282,
+          "duration" : 8838
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "d994bf3640b0f5e3",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272724405,
+          "stop" : 1746272733259,
+          "duration" : 8854
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/company", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "8be0b04ed2be2301",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272924360,
+          "stop" : 1746272930760,
+          "duration" : 6400
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/fields", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "6b77e71b8141587a",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272767981,
+          "stop" : 1746272774698,
+          "duration" : 6717
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/job", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "61a921de79c4cd6",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1746272790052,
+          "stop" : 1746272818198,
+          "duration" : 28146
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "27468dc776f127ab",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272857412,
+          "stop" : 1746272863415,
+          "duration" : 6003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/projects", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "82d06f028616fc5f",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272901684,
+          "stop" : 1746272908130,
+          "duration" : 6446
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/company", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "18eb58a91a90b7bc",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272946764,
+          "stop" : 1746272952875,
+          "duration" : 6111
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/blog", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "35025c74469a8964",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272879662,
+          "stop" : 1746272885474,
+          "duration" : 5812
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "bc70f9e38f6cdbac",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272969094,
+          "stop" : 1746272975341,
+          "duration" : 6247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/job", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "4aa09d21fd83fc83",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272707437,
+          "stop" : 1746272718408,
+          "duration" : 10971
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/contacts", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "1ac8584e72d903fc",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272754385,
+          "stop" : 1746272761834,
+          "duration" : 7449
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital/blog", "chrome" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "e49b9b928d03ac0f",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272834291,
+          "stop" : 1746272841367,
+          "duration" : 7076
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "safari" ]
+      }, {
+        "name" : "TC-01.02 Check footer elements",
+        "uid" : "cb7f19f65be9c9db",
+        "parentUid" : "574503223d4e3a9991a6fbc5fa3bba5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272669697,
+          "stop" : 1746272685679,
+          "duration" : 15982
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "https://only.digital", "chrome" ]
+      } ],
+      "uid" : "574503223d4e3a9991a6fbc5fa3bba5f"
+    }, {
+      "name" : "8268@Mac-1746268213041.local.main(1)",
+      "children" : [ {
+        "name" : "TC-00.01 Open Google.com",
+        "uid" : "4d2ddef79ec4ff6c",
+        "parentUid" : "b6b759997b675b342a973a55b5112a83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272653496,
+          "stop" : 1746272654513,
+          "duration" : 1017
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "TC-00.00 AssertTrue = true",
+        "uid" : "5f56c62843e88359",
+        "parentUid" : "b6b759997b675b342a973a55b5112a83",
+        "status" : "passed",
+        "time" : {
+          "start" : 1746272655871,
+          "stop" : 1746272655872,
           "duration" : 1
         },
         "flaky" : false,
@@ -737,20 +737,20 @@
         "parameters" : [ "chrome" ]
       }, {
         "name" : "testFail",
-        "uid" : "83b917a9d7374d7b",
-        "parentUid" : "95f2f063df49c0963712920cc7dafac1",
+        "uid" : "5e8822e41d4fff36",
+        "parentUid" : "b6b759997b675b342a973a55b5112a83",
         "status" : "unknown",
         "time" : {
-          "start" : 1746271531519,
-          "stop" : 1746271531522,
-          "duration" : 3
+          "start" : 1746272633982,
+          "stop" : 1746272633983,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "95f2f063df49c0963712920cc7dafac1"
+      "uid" : "b6b759997b675b342a973a55b5112a83"
     } ],
-    "uid" : "8ad322994f6160f1e3217e92674d62aa"
+    "uid" : "9362879e672ded32e65d8ff0bc4b0d85"
   } ]
 }
