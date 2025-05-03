@@ -4,6 +4,7 @@ import com.testsforonly.utils.ProjectUtils;
 import com.testsforonly.utils.ReportUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.testsforonly.utils.DriverUtils;
+import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
@@ -30,6 +31,8 @@ public abstract class BaseTest {
     WebDriverManager.edgedriver().setup();
     WebDriverManager.safaridriver().setup();
 
+    System.setProperty("webdriver.timeouts.implicitwait", "10000");
+    System.setProperty("webdriver.timeouts.pageLoad", "30000");
     Reporter.log("INFO: Setup Webdriver manager", true);
 
     // Включаем подробное логирование
@@ -42,33 +45,66 @@ public abstract class BaseTest {
   @Parameters("browser")
   @BeforeMethod(alwaysRun = true)
   protected void setupDriver(@Optional("firefox") String browser, ITestContext context, ITestResult result) {
-    try {
-      System.out.println("BEFORE METHOD STARTED");
+    final int maxAttempts = 3;
+    int attempt = 0;
+    WebDriver driver = null;
 
+    try {
+      Reporter.log("BEFORE METHOD STARTED", true);
       Reporter.log("_________________________________________________________", true);
       Reporter.log("Run " + result.getMethod().getMethodName(), true);
 
-      WebDriver driver = DriverUtils.createDriver(browser);
-      driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-      this.threadLocalDriver.set(driver);
+      while (attempt < maxAttempts) {
+        try {
+          attempt++;
+          Reporter.log("Attempt " + attempt + " to create " + browser + " driver", true);
+
+          driver = DriverUtils.createDriver(browser);
+          driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+          this.threadLocalDriver.set(driver);
+
+          Reporter.log("DRIVER CREATED: " + (driver != null), true);
+          break;
+        } catch (SessionNotCreatedException e) {
+          if (attempt == maxAttempts) {
+            throw e;
+          }
+          Reporter.log("Attempt " + attempt + " failed. Retrying...", true);
+          Thread.sleep(2000 * attempt);
+
+          if (driver != null) {
+            try { driver.quit(); } catch (Exception ignored) {}
+          }
+        }
+      }
+
+      if (driver == null) {
+        String errorMsg = "Failed to create driver after " + maxAttempts + " attempts or unknown browser parameter" + browser;
+        Reporter.log("ERROR: " + errorMsg, true);
+        throw new IllegalArgumentException(errorMsg);
+      } else {
+        Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
+                " driver created (attempt " + attempt + ")", true);
+      }
 
       Reporter.log("Test Thread ID: " + Thread.currentThread().getId(), true);
       Reporter.log("TEST SUITE: " + context.getCurrentXmlTest().getSuite().getName(), true);
       Reporter.log("RUN " + result.getMethod().getMethodName(), true);
 
-      if (driver == null) {
-        Reporter.log("ERROR: unknown browser parameter" + browser, true);
-        throw new IllegalArgumentException("Unknown 'browser' parameter - " + browser);
-      } else {
-        Reporter.log("INFO: " + browser.substring(0, 1).toUpperCase() + browser.substring(1) +
-                " driver created", true);
-      }
-
-      System.out.println("DRIVER CREATED: " + (driver != null));
     } catch (Throwable t) {
-      System.err.println("ERROR IN @BEFORE METHOD:");
+      System.err.println("ERROR IN @BEFORE METHOD (after " + attempt + " attempts):");
       t.printStackTrace();
-      throw t;
+
+      if (driver != null) {
+        try { driver.quit(); } catch (Exception ignored) {}
+      }
+      threadLocalDriver.remove();
+
+      try {
+        throw t;
+      } catch (InterruptedException e) {
+        throw new RuntimeException(e);
+      }
     }
   }
 

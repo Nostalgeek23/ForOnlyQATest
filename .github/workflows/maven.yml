@@ -83,12 +83,10 @@ jobs:
         if: ${{ matrix.os == 'macos-13' }}
         run: |
           mvn clean -e install -Dmaven.test.skip=true
-          brew install selenium-server-standalone
-          selenium-server -port 4444;
-          defaults write com.apple.Safari IncludeDevelopMenu YES
-          defaults write com.apple.Safari AllowRemoteAutomation 1
+          
           sudo safaridriver --enable
-          safaridriver -p 0 &          
+          defaults write com.apple.Safari IncludeDevelopMenu -bool true
+          defaults write com.apple.Safari AllowRemoteAutomation 1
 
       - name: Test with Maven - MacOs
         if: ${{ matrix.os == 'macos-13' }}
@@ -123,17 +121,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      #      - name: Install Homebrew
-      #        run: |
-      #          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      #          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bashrc
-      #          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-      #
       - name: Install Allure
         run: |
-          curl -o allure-2.13.8.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz
-          sudo tar -zxvf allure-2.13.8.tgz -C /opt/
-          sudo ln -s /opt/allure-2.13.8/bin/allure /usr/bin/allure
+          curl -o allure-2.34.0.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.34.0/allure-commandline-2.34.0.tgz
+          sudo tar -zxvf allure-2.34.0.tgz -C /opt/
+          sudo ln -s /opt/allure-2.34.0/bin/allure /usr/bin/allure
           allure --version
 
       - name: Download Allure Results (Ubuntu)
