@@ -32,6 +32,8 @@ public class FooterTest extends BaseTest {
   @Description("Ensure that footer has all specified elements")
 
   public void testFooterElements(String url) {
+    System.out.println("TEST BODY STARTED");
+
     Allure.step("Open " + url + " page");
     getDriver().get(url);
 
