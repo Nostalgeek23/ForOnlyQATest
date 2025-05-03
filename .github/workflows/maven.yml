@@ -59,7 +59,7 @@ jobs:
         if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
 
-          mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
+          mvn test -PUbuntuTest
           ls -la target/allure-results
 
 
