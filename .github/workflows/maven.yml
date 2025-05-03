@@ -60,9 +60,7 @@ jobs:
         run: |
           mvn test -PSmokeTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/smoke.xml
           mvn test -PUbuntuTest -Dtestng.suiteXmlFile=src/test/resources/xmlSuites/testngubu.xml
-
-      - name: List Allure Results after tests
-        run: ls -la target/allure-results
+          ls -la target/allure-results
 
 
       #             WINDOWS JOBS
@@ -79,9 +77,7 @@ jobs:
         run: |
           mvn test -PSmokeTest
           mvn test -PWindowsTest
-
-      - name: List Allure Results after tests
-        run: ls -la target/allure-results
+          ls -la target/allure-results
 
       #             MACOS JOBS
 
@@ -99,9 +95,7 @@ jobs:
         run: |
           mvn test -PSmokeTest
           mvn test -PMacosTest
-
-      - name: List Allure Results after tests
-        run: ls -la target/allure-results
+          ls -la target/allure-results
 
       #          Dorny Test Reporter
 
