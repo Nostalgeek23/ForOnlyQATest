@@ -1,0 +1,206 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Ubuntu crossBrowser Test Suite",
+    "children" : [ {
+      "name" : "ChromeTestUbuntu",
+      "children" : [ {
+        "name" : "com.testsforonly.test.FooterTest",
+        "children" : [ {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "31009702e2c9641e",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268476591,
+            "stop" : 1746268486219,
+            "duration" : 9628
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "9e927e352ab86ef4",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268486736,
+            "stop" : 1746268495142,
+            "duration" : 8406
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/projects", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "240a81d59bb998c7",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268495538,
+            "stop" : 1746268503805,
+            "duration" : 8267
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/contacts", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "ece91d98dd1cb0b9",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268504166,
+            "stop" : 1746268512455,
+            "duration" : 8289
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/company", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "ec1fc80d95e14e7b",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268512837,
+            "stop" : 1746268520860,
+            "duration" : 8023
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/fields", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "b4b7740e3fe9c0f6",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268521234,
+            "stop" : 1746268529262,
+            "duration" : 8028
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/blog", "chrome" ]
+        }, {
+          "name" : "TC-01.02 Check footer elements",
+          "uid" : "85da6e172714e158",
+          "parentUid" : "0623aaf4b9e2e295dfe6d327421ed81b",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268529606,
+            "stop" : 1746268537404,
+            "duration" : 7798
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "https://only.digital/job", "chrome" ]
+        } ],
+        "uid" : "0623aaf4b9e2e295dfe6d327421ed81b"
+      } ],
+      "uid" : "e38e0c3158ea24bbcb54f9002ad78b89"
+    }, {
+      "name" : "FirefoxTestUbuntu",
+      "children" : [ {
+        "name" : "FrameworkTest",
+        "children" : [ {
+          "name" : "testFail",
+          "uid" : "42d4e2f5651530d9",
+          "parentUid" : "6cfff368f903e1774005647bf48a1348",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1746268537550,
+            "stop" : 1746268537550,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "firefox" ]
+        }, {
+          "name" : "TC-00.01 Open Google.com",
+          "uid" : "5c8766c28ce9677c",
+          "parentUid" : "6cfff368f903e1774005647bf48a1348",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268540027,
+            "stop" : 1746268540842,
+            "duration" : 815
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "firefox" ]
+        }, {
+          "name" : "TC-00.00 AssertTrue = true",
+          "uid" : "914ef1283a78ece3",
+          "parentUid" : "6cfff368f903e1774005647bf48a1348",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268543187,
+            "stop" : 1746268543187,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "firefox" ]
+        } ],
+        "uid" : "6cfff368f903e1774005647bf48a1348"
+      } ],
+      "uid" : "b4deab2e0660b67f294fd829ec0c5a8a"
+    } ],
+    "uid" : "501f59c5a481a2f58372665a43e03711"
+  }, {
+    "name" : "Smoke",
+    "children" : [ {
+      "name" : "Smoke Test Run",
+      "children" : [ {
+        "name" : "FrameworkTest",
+        "children" : [ {
+          "name" : "testFail",
+          "uid" : "d9c40ef95f430013",
+          "parentUid" : "960b3849330e88e9a84960606c138ae0",
+          "status" : "unknown",
+          "time" : {
+            "start" : 1746268613765,
+            "stop" : 1746268613765,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        }, {
+          "name" : "TC-00.01 Open Google.com",
+          "uid" : "a906bffd937eead5",
+          "parentUid" : "960b3849330e88e9a84960606c138ae0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268633446,
+            "stop" : 1746268635792,
+            "duration" : 2346
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        }, {
+          "name" : "TC-00.00 AssertTrue = true",
+          "uid" : "f53c5b4c60aa1499",
+          "parentUid" : "960b3849330e88e9a84960606c138ae0",
+          "status" : "passed",
+          "time" : {
+            "start" : 1746268638206,
+            "stop" : 1746268638206,
+            "duration" : 0
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        } ],
+        "uid" : "960b3849330e88e9a84960606c138ae0"
+      } ],
+      "uid" : "92bdd24e50cbb8041b398aa65aa6bfe0"
+    } ],
+    "uid" : "26c3355bfe48b4d973f7dd61ae44b0c7"
+  } ]
+}

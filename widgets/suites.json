@@ -1,0 +1,26 @@
+{
+  "total" : 2,
+  "items" : [ {
+    "uid" : "501f59c5a481a2f58372665a43e03711",
+    "name" : "Ubuntu crossBrowser Test Suite",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 1,
+      "total" : 10
+    }
+  }, {
+    "uid" : "26c3355bfe48b4d973f7dd61ae44b0c7",
+    "name" : "Smoke",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 1,
+      "total" : 3
+    }
+  } ]
+}

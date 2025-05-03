@@ -1,0 +1,81 @@
+{
+  "uid" : "d9c40ef95f430013",
+  "name" : "testFail",
+  "fullName" : "FrameworkTest.testFail",
+  "historyId" : "d039e33cc219c10e93420817dc6d8126",
+  "time" : {
+    "start" : 1746268613765,
+    "stop" : 1746268613765,
+    "duration" : 0
+  },
+  "status" : "unknown",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "FrameworkTest"
+  }, {
+    "name" : "testClass",
+    "value" : "FrameworkTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testFail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Smoke"
+  }, {
+    "name" : "suite",
+    "value" : "Smoke Test Run"
+  }, {
+    "name" : "subSuite",
+    "value" : "FrameworkTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az972-841"
+  }, {
+    "name" : "thread",
+    "value" : "4812@fv-az972-841.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7d2a6699032fee0b",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1746268511878,
+        "stop" : 1746268511879,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c7c6f3f4086102cb",
+      "status" : "unknown",
+      "time" : {
+        "start" : 1746268468648,
+        "stop" : 1746268468649,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d9c40ef95f430013.json",
+  "parameterValues" : [ "chrome" ]
+}
