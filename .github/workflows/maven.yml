@@ -123,12 +123,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      #      - name: Install Homebrew
-      #        run: |
-      #          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-      #          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/runner/.bashrc
-      #          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-      #
       - name: Install Allure
         run: |
           curl -o allure-2.34.0.tgz -OLs https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.34.0/allure-commandline-2.34.0.tgz
