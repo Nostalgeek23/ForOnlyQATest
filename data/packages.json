@@ -2,110 +2,15 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "com.testsforonly.test.FooterTest",
-    "children" : [ {
-      "name" : "testFooterElements",
-      "uid" : "d8c453f0d0c79fad",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270482993,
-        "stop" : 1746270493478,
-        "duration" : 10485
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "eb71607582800ce1",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270493958,
-        "stop" : 1746270503221,
-        "duration" : 9263
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/projects", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "903e791cf820285e",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270503590,
-        "stop" : 1746270512405,
-        "duration" : 8815
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/contacts", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "4fc7bba1fce5f9c",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270512789,
-        "stop" : 1746270521844,
-        "duration" : 9055
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/company", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "4403310e0ff12ed5",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270522209,
-        "stop" : 1746270530671,
-        "duration" : 8462
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/fields", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "e1ea39e5f15d447c",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270531048,
-        "stop" : 1746270539611,
-        "duration" : 8563
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/blog", "chrome" ]
-    }, {
-      "name" : "testFooterElements",
-      "uid" : "eaf4be3b06a9aba0",
-      "parentUid" : "d37b170616c68d82e86878527ee81166",
-      "status" : "passed",
-      "time" : {
-        "start" : 1746270539975,
-        "stop" : 1746270549493,
-        "duration" : 9518
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "https://only.digital/job", "chrome" ]
-    } ],
-    "uid" : "com.testsforonly.test.FooterTest"
-  }, {
     "name" : "FrameworkTest",
     "children" : [ {
       "name" : "testFail",
-      "uid" : "f5267257b8c1c96f",
+      "uid" : "4fcf8ed11eb820a7",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "unknown",
       "time" : {
-        "start" : 1746270549618,
-        "stop" : 1746270549618,
+        "start" : 1746271558926,
+        "stop" : 1746271558926,
         "duration" : 0
       },
       "flaky" : false,
@@ -113,64 +18,64 @@
       "parameters" : [ "firefox" ]
     }, {
       "name" : "testGoogle",
-      "uid" : "44fb64d436c34ae5",
+      "uid" : "9d2a0379ab6470ff",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "passed",
       "time" : {
-        "start" : 1746270551487,
-        "stop" : 1746270552261,
-        "duration" : 774
+        "start" : 1746271569800,
+        "stop" : 1746271570878,
+        "duration" : 1078
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "firefox" ]
     }, {
       "name" : "testPass",
-      "uid" : "38745084e873425a",
+      "uid" : "3e13fb8b574d7be0",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "passed",
       "time" : {
-        "start" : 1746270554458,
-        "stop" : 1746270554458,
-        "duration" : 0
+        "start" : 1746271573528,
+        "stop" : 1746271573529,
+        "duration" : 1
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "firefox" ]
     }, {
       "name" : "testFail",
-      "uid" : "d96073b2280b725",
+      "uid" : "2f24744f943cbdaf",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "unknown",
       "time" : {
-        "start" : 1746270650323,
-        "stop" : 1746270650323,
-        "duration" : 0
+        "start" : 1746271642842,
+        "stop" : 1746271642858,
+        "duration" : 16
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome" ]
     }, {
       "name" : "testGoogle",
-      "uid" : "7c33b5d779ecff38",
+      "uid" : "96bcb0d10676f5cf",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "passed",
       "time" : {
-        "start" : 1746270658393,
-        "stop" : 1746270659705,
-        "duration" : 1312
+        "start" : 1746271661401,
+        "stop" : 1746271663555,
+        "duration" : 2154
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ "chrome" ]
     }, {
       "name" : "testPass",
-      "uid" : "906f6195d2438dc6",
+      "uid" : "811e7821da1ac77f",
       "parentUid" : "00b7fb79b97d14a601f2e670fc3ee514",
       "status" : "passed",
       "time" : {
-        "start" : 1746270662081,
-        "stop" : 1746270662081,
+        "start" : 1746271665894,
+        "stop" : 1746271665894,
         "duration" : 0
       },
       "flaky" : false,
@@ -178,5 +83,373 @@
       "parameters" : [ "chrome" ]
     } ],
     "uid" : "00b7fb79b97d14a601f2e670fc3ee514"
+  }, {
+    "name" : "com.testsforonly.test.FooterTest",
+    "children" : [ {
+      "name" : "testFooterElements",
+      "uid" : "73fbc94b94f3aa94",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271675155,
+        "stop" : 1746271733147,
+        "duration" : 57992
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "c3303baf16dc4f66",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271735286,
+        "stop" : 1746271754160,
+        "duration" : 18874
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/projects", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "e279f9114715d8e3",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271754921,
+        "stop" : 1746271772382,
+        "duration" : 17461
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/contacts", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "64d261382d0e12ef",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271768518,
+        "stop" : 1746271775610,
+        "duration" : 7092
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "cea86de85e34f757",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271773140,
+        "stop" : 1746271793828,
+        "duration" : 20688
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/company", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "55f9424d0d099796",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271792439,
+        "stop" : 1746271799964,
+        "duration" : 7525
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/projects", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "83a253c3ccb065a3",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271799633,
+        "stop" : 1746271824945,
+        "duration" : 25312
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/fields", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "29fb3d8caebf88d2",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271816527,
+        "stop" : 1746271822740,
+        "duration" : 6213
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/contacts", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "3c61aad5bdb41f53",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271825662,
+        "stop" : 1746271843541,
+        "duration" : 17879
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/blog", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "2c7699f692f8a18a",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271839193,
+        "stop" : 1746271845823,
+        "duration" : 6630
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/company", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "93c1ea4586e32b2a",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271849636,
+        "stop" : 1746271882159,
+        "duration" : 32523
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/job", "chrome" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "7bda299f2300baa",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271862603,
+        "stop" : 1746271869268,
+        "duration" : 6665
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/fields", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "1627076c4c49c897",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271884324,
+        "stop" : 1746271982211,
+        "duration" : 97887
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "26fdc9832cb557e6",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271885863,
+        "stop" : 1746271892188,
+        "duration" : 6325
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/blog", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "c7eeab5a01247d3e",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271908604,
+        "stop" : 1746271915260,
+        "duration" : 6656
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/job", "safari" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "3828b653948f5859",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746271984591,
+        "stop" : 1746272015637,
+        "duration" : 31046
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/projects", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "5cff5c2920ff376",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272028713,
+        "stop" : 1746272111642,
+        "duration" : 82929
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/contacts", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "62c3dbba1242f177",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272113595,
+        "stop" : 1746272147281,
+        "duration" : 33686
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/company", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "6627d9f6188f0e0d",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272160846,
+        "stop" : 1746272297501,
+        "duration" : 136655
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/fields", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "157d14fbc0070314",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272304861,
+        "stop" : 1746272320628,
+        "duration" : 15767
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/blog", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "bf3967fed836701f",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272333234,
+        "stop" : 1746272382324,
+        "duration" : 49090
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/job", "edge" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "351d69cffa859394",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272395739,
+        "stop" : 1746272408020,
+        "duration" : 12281
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "ff73f3fe06de6dc5",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272410680,
+        "stop" : 1746272419073,
+        "duration" : 8393
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/projects", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "5470fe896107fdab",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272421591,
+        "stop" : 1746272429885,
+        "duration" : 8294
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/contacts", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "a0c33b98e9d977f4",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272432545,
+        "stop" : 1746272439418,
+        "duration" : 6873
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/company", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "46f2ec4c90b24622",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272444104,
+        "stop" : 1746272452331,
+        "duration" : 8227
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/fields", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "85b28c47eb0cd0c1",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272455023,
+        "stop" : 1746272463159,
+        "duration" : 8136
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/blog", "firefox" ]
+    }, {
+      "name" : "testFooterElements",
+      "uid" : "3b8bad1e24afddaf",
+      "parentUid" : "d37b170616c68d82e86878527ee81166",
+      "status" : "passed",
+      "time" : {
+        "start" : 1746272465669,
+        "stop" : 1746272473197,
+        "duration" : 7528
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "https://only.digital/job", "firefox" ]
+    } ],
+    "uid" : "com.testsforonly.test.FooterTest"
   } ]
 }
