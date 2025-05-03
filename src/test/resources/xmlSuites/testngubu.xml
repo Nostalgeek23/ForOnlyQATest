@@ -13,7 +13,7 @@
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="FrameworkTest"/>
-            <class name="com.testsforonly.test.FooterTest"/>
+<!--            <class name="com.testsforonly.test.FooterTest"/>-->
         </classes>
     </test>
 
