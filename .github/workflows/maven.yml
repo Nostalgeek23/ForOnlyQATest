@@ -88,8 +88,8 @@ jobs:
         if: ${{ matrix.os == 'windows-latest' }}
         run: |
 
-          mvn test -PWindowsTest -Dallure.results.directory=target/allure-results-windows-latest
-          mvn allure:report -PWindowsTest -Dallure.results.directory=target/allure-results-windows-latest
+          mvn test -PWindowsTest "-Dallure.results.directory=target/allure-results-windows-latest"
+          mvn allure:report -PWindowsTest "-Dallure.results.directory=target/allure-results-windows-latest"
 
 
       #             MACOS JOBS
