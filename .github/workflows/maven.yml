@@ -114,6 +114,8 @@ jobs:
           name: allure-results-${{ matrix.os }}
           path: target/allure-results
 
+
+
   merge-reports:
     name: Merge Allure Reports and Deploy
     runs-on: ubuntu-latest
@@ -150,17 +152,28 @@ jobs:
 
       - name: List Downloaded Reports for Debugging
         run: |
-          echo "Ubuntu Allure Results:"
-          ls -l reports/ubuntu
-          echo "Windows Allure Results:"
+          echo "Ubuntu Allure Results:"|| echo "Not found"
+          ls -l reports/ubuntu 
+          echo "Windows Allure Results:"|| echo "Not found"
           ls -l reports/windows
-          echo "macOS Allure Results:"
+          echo "macOS Allure Results:"|| echo "Not found"
           ls -l reports/macos     
 
       - name: Merge Allure Reports
         run: |
-          allure generate reports/ubuntu reports/windows reports/macos --clean -o allure-report
-          echo "Allure generate exit code: $?"
+          echo "Checking for available allure results..."
+          found=""
+          [ -d reports/ubuntu ] && [ "$(ls -A reports/ubuntu)" ] && found="yes"
+          [ -d reports/windows ] && [ "$(ls -A reports/windows)" ] && found="yes"
+          [ -d reports/macos ] && [ "$(ls -A reports/macos)" ] && found="yes"
+
+          if [ "$found" = "yes" ]; then
+            echo "Generating Allure Report..."
+            allure generate reports/ubuntu reports/windows reports/macos --clean -o allure-report || echo "Allure generation failed"
+          else
+            echo "No Allure results found. Skipping report generation."
+            mkdir -p allure-report && echo "<html><body><h1>No Allure Results Available</h1></body></html>" > allure-report/index.html
+          fi
 
       - name: List Merged Allure Report for Debugging
         run: |
