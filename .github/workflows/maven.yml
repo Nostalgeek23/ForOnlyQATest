@@ -126,11 +126,26 @@ jobs:
 
       #          ALLURE
 
-      - name: Upload Allure Results
+      - name: Upload Allure Results Ubuntu
+        if: ${{ matrix.os == 'ubuntu-latest' }}
         uses: actions/upload-artifact@v4
         with:
-          name: allure-results-${{ matrix.os }}
-          path: target/allure-results-${{ matrix.os }}
+          name: allure-results-ubuntu-latest
+          path: target/allure-results-ubuntu-latest
+
+      - name: Upload Allure Results Windows
+        if: ${{ matrix.os == 'windows-latest' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-windows-latest
+          path: target/allure-results-windows-latest
+
+      - name: Upload Allure Results Macos
+        if: ${{ matrix.os == 'macos-13' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-results-macos-13
+          path: target/allure-results-macos-13
 
 
   merge-reports:
