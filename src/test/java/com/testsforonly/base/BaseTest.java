@@ -27,9 +27,6 @@ public abstract class BaseTest {
 
   @BeforeSuite(alwaysRun = true)
   protected void setupWebDriverManager() {
-    String osLabel = System.getProperty("os.label");
-    Allure.label("os", osLabel);
-
     WebDriverManager.chromedriver().setup();
     WebDriverManager.firefoxdriver().setup();
     WebDriverManager.edgedriver().setup();
@@ -52,6 +49,8 @@ public abstract class BaseTest {
     final int maxAttempts = 3;
     int attempt = 0;
     WebDriver driver = null;
+    String osLabel = System.getProperty("os.label");
+    Allure.label("os", osLabel);
 
     try {
       Reporter.log("BEFORE METHOD STARTED", true);
