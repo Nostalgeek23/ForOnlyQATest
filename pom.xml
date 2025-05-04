@@ -78,6 +78,9 @@
     <profiles>
         <profile>
             <id>WindowsTest</id>
+            <properties>
+                <os.label>windows</os.label>
+            </properties>
             <build>
                 <plugins>
 
@@ -89,7 +92,7 @@
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
                                 -Dallure.results.directory=target/allure-results-windows-latest
-                                -Dallure.label.os=windows
+                                -Dos.label=${os.label}
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>
@@ -121,6 +124,9 @@
 
         <profile>
             <id>UbuntuTest</id>
+            <properties>
+                <os.label>ubuntu</os.label>
+            </properties>
             <build>
                 <plugins>
 
@@ -132,7 +138,7 @@
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
                                 -Dallure.results.directory=target/allure-results-ubuntu-latest
-                                -Dallure.label.os=ubuntu
+                                -Dos.label=${os.label}
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>
@@ -163,6 +169,9 @@
 
         <profile>
             <id>MacosTest</id>
+            <properties>
+                <os.label>macos</os.label>
+            </properties>
             <build>
                 <plugins>
 
@@ -174,7 +183,7 @@
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
                                 -Dallure.results.directory=target/allure-results-macos-13
-                                -Dallure.label.os=macos
+                                -Dos.label=${os.label}
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>

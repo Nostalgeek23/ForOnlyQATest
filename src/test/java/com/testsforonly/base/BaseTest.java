@@ -27,7 +27,9 @@ public abstract class BaseTest {
 
   @BeforeSuite(alwaysRun = true)
   protected void setupWebDriverManager() {
-    Allure.label("os", System.getProperty("os.name"));
+    String osLabel = System.getProperty("os.label");
+    Allure.label("os", osLabel);
+
     WebDriverManager.chromedriver().setup();
     WebDriverManager.firefoxdriver().setup();
     WebDriverManager.edgedriver().setup();
