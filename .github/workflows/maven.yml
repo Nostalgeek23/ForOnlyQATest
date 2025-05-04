@@ -61,7 +61,7 @@ jobs:
 
           mvn test -PUbuntuTest
           ls -la target/allure-results
-          mvn allure:report
+          mvn allure:report -PUbuntuTest
           ls -la target/allure-results
 
       - name: Debug Allure Output
@@ -96,7 +96,7 @@ jobs:
         run: |
 
           mvn test -PWindowsTest
-          mvn allure:report
+          mvn allure:report -PWindowsTest
 
       - name: Copy Allure Results (Windows)
         if: ${{ matrix.os == 'windows-latest' }}
@@ -126,7 +126,7 @@ jobs:
 
           mvn test -PMacosTest
           ls -la target/allure-results
-          mvn allure:report
+          mvn allure:report -PMacosTest
           ls -la target/allure-results
 
       - name: Copy Allure Results (macOS)
