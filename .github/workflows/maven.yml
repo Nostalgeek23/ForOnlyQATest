@@ -63,12 +63,12 @@ jobs:
           ls -la target/allure-results
 
       - name: Debug Allure Output
+        if: ${{ matrix.os == 'ubuntu-latest' }}
         run: |
           echo "Contents of target:"
           ls -l target
           echo "Contents of target/allure-results:"
           ls -l target/allure-results || echo "No allure-results directory"
-
 
       - name: Copy Allure Results (Ubuntu)
         if: ${{ matrix.os == 'ubuntu-latest' }}
