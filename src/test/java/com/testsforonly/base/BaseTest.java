@@ -4,6 +4,7 @@ import com.testsforonly.utils.ProjectUtils;
 import com.testsforonly.utils.ReportUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.testsforonly.utils.DriverUtils;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,6 +27,7 @@ public abstract class BaseTest {
 
   @BeforeSuite(alwaysRun = true)
   protected void setupWebDriverManager() {
+    Allure.label("os", System.getProperty("os.name"));
     WebDriverManager.chromedriver().setup();
     WebDriverManager.firefoxdriver().setup();
     WebDriverManager.edgedriver().setup();
