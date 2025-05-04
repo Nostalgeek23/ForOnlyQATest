@@ -169,18 +169,21 @@ jobs:
         with:
           name: allure-results-ubuntu-latest
           path: reports/ubuntu
+          merge-multiple: true
 
       - name: Download Allure Results (Windows)
         uses: actions/download-artifact@v4
         with:
           name: allure-results-windows-latest
           path: reports/windows
+          merge-multiple: true
 
       - name: Download Allure Results (macOS)
         uses: actions/download-artifact@v4
         with:
           name: allure-results-macos-13
           path: reports/macos
+          merge-multiple: true
 
       - name: List Downloaded Reports for Debugging
         run: |
