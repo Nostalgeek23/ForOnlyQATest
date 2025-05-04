@@ -88,6 +88,7 @@
                         <configuration>
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
+                                -Dallure.results.directory=target/allure-results-windows
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>
@@ -109,7 +110,7 @@
                         <version>2.15.2</version>
                         <configuration>
                             <reportVersion>${allure.version}</reportVersion>
-<!--                            <resultsDirectory>${project.build.directory}/allure-results-windows</resultsDirectory>-->
+                            <resultsDirectory>${project.build.directory}/allure-results-windows</resultsDirectory>
                         </configuration>
                     </plugin>
 
@@ -129,6 +130,7 @@
                         <configuration>
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
+                                -Dallure.results.directory=target/allure-results-ubuntu
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>
@@ -169,6 +171,7 @@
                         <configuration>
                             <skipTests>${tests.skip}</skipTests>
                             <argLine>
+                                -Dallure.results.directory=target/allure-results-macos
                                 -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                             </argLine>
                             <suiteXmlFiles>
