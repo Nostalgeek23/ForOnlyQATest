@@ -49,8 +49,9 @@ public abstract class BaseTest {
     final int maxAttempts = 3;
     int attempt = 0;
     WebDriver driver = null;
-    String osLabel = System.getProperty("os.label");
+    String osLabel = System.getProperty("os.label", "unknown");
     Allure.label("os", osLabel);
+    Allure.label("browser", browser);
 
     try {
       Reporter.log("BEFORE METHOD STARTED", true);

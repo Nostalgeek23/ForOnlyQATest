@@ -60,7 +60,7 @@ jobs:
         run: |
           mkdir -p target/allure-results-${{ matrix.os }}
 
-          mvn test -PUbuntuTest -Dallure.results.directory=target/allure-results-ubuntu-latest
+          mvn test -PUbuntuTest -Dallure.results.directory=target/allure-results-ubuntu-latest -Dos.label=ubuntu
           ls -la target/allure-results-${{ matrix.os }}
           mvn allure:report -PUbuntuTest -Dallure.results.directory=target/allure-results-ubuntu-latest
           ls -la target/allure-results-${{ matrix.os }}
@@ -88,7 +88,7 @@ jobs:
         if: ${{ matrix.os == 'windows-latest' }}
         run: |
 
-          mvn test -PWindowsTest "-Dallure.results.directory=target/allure-results-windows-latest"
+          mvn test -PWindowsTest "-Dallure.results.directory=target/allure-results-windows-latest" "-Dos.label=ubuntu"
           mvn allure:report -PWindowsTest "-Dallure.results.directory=target/allure-results-windows-latest"
 
 
@@ -108,7 +108,7 @@ jobs:
         run: |
           mkdir -p target/allure-results-${{ matrix.os }}
 
-          mvn test -PMacosTest -Dallure.results.directory=target/allure-results-macos-13
+          mvn test -PMacosTest -Dallure.results.directory=target/allure-results-macos-13 -Dos.label=macos
           ls -la target/allure-results-${{ matrix.os }}
           mvn allure:report -PMacosTest -Dallure.results.directory=target/allure-results-macos-13
           ls -la target/allure-results-${{ matrix.os }}
