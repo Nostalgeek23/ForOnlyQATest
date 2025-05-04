@@ -50,17 +50,6 @@ public abstract class BaseTest {
     int attempt = 0;
     WebDriver driver = null;
 
-    String os = System.getProperty("os.label", "unknown");
-    Allure.getLifecycle().updateTestCase(testResult -> {
-      String oldName = testResult.getName(); // обычно имя метода
-      String newName = oldName + " [" + os + " | " + browser + "]";
-      testResult.setName(newName);
-      testResult.setFullName(testResult.getFullName() + "_" + os + "_" + browser);
-    });
-
-    Allure.label("os", os);
-    Allure.label("browser", browser);
-
     try {
       Reporter.log("BEFORE METHOD STARTED", true);
       Reporter.log("_________________________________________________________", true);
