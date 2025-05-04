@@ -60,6 +60,9 @@ jobs:
         run: |
 
           mvn test -PUbuntuTest
+          mkdir -p saved-allure-results/ubuntu
+          cp -r target/allure-results/* saved-allure-results/ubuntu || echo "No results"
+    
           ls -la target/allure-results
 
 
@@ -77,6 +80,8 @@ jobs:
         run: |
 
           mvn test -PWindowsTest
+          mkdir saved-allure-results/windows
+          xcopy /s /e /y target\allure-results\* saved-allure-results\windows || echo "No results"
 
       #             MACOS JOBS
 
@@ -94,6 +99,9 @@ jobs:
         run: |
 
           mvn test -PMacosTest
+          mkdir -p saved-allure-results/macos
+          cp -r target/allure-results/* saved-allure-results/macos || echo "No results"
+    
           ls -la target/allure-results
 
       #          Dorny Test Reporter
@@ -112,7 +120,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: allure-results-${{ matrix.os }}
-          path: target/allure-results
+          path: saved-allure-results/${{ matrix.os }}
 
 
 
