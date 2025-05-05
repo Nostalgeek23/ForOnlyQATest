@@ -114,7 +114,8 @@
                         <version>2.15.2</version>
                         <configuration>
                             <reportVersion>${allure.version}</reportVersion>
-                            <resultsDirectory>${project.build.directory}/allure-results-windows-latest</resultsDirectory>
+                            <resultsDirectory>${project.build.directory}/allure-results-windows-latest
+                            </resultsDirectory>
                         </configuration>
                     </plugin>
 

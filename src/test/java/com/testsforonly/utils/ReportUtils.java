@@ -18,7 +18,7 @@ public class ReportUtils {
   public static void logf(String str, Object... arr) {
     String message = String.format(str, arr);
     Reporter.log(message, true);
-    System.out.println("REPORT: " + message); // Принудительный вывод в консоль
+    System.out.println("REPORT: " + message);
   }
 
   private static void logError(String error) {
