@@ -4,6 +4,7 @@ import com.testsforonly.utils.ProjectUtils;
 import com.testsforonly.utils.ReportUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import com.testsforonly.utils.DriverUtils;
+import io.qameta.allure.Allure;
 import org.openqa.selenium.SessionNotCreatedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,15 +32,12 @@ public abstract class BaseTest {
     WebDriverManager.edgedriver().setup();
     WebDriverManager.safaridriver().setup();
 
-    System.setProperty("webdriver.timeouts.implicitwait", "10000");
-    System.setProperty("webdriver.timeouts.pageLoad", "30000");
     Reporter.log("INFO: Setup Webdriver manager", true);
 
     // Включаем подробное логирование
     System.setProperty("org.uncommons.reportng.escape-output", "false");
     System.setProperty("org.uncommons.reportng.title", "Test Reports");
     Reporter.setEscapeHtml(false);
-    Reporter.log("INFO: Включаем подробное логирование", true);
   }
 
   @Parameters("browser")

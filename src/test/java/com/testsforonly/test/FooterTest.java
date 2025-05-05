@@ -2,6 +2,7 @@ package com.testsforonly.test;
 
 import com.testsforonly.base.BaseTest;
 import com.testsforonly.data.TestData;
+import com.testsforonly.utils.OSLabelListener;
 import com.testsforonly.utils.RetryAnalyzer;
 import io.qameta.allure.Allure;
 import io.qameta.allure.Description;
@@ -15,9 +16,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import java.util.List;
 
+@Listeners(OSLabelListener.class)
 public class FooterTest extends BaseTest {
 
   @Test(
@@ -33,7 +37,7 @@ public class FooterTest extends BaseTest {
   @Description("Ensure that footer has all specified elements")
 
   public void testFooterElements(String url) {
-    System.out.println("TEST BODY STARTED");
+    Reporter.log("TEST BODY STARTED", true);
 
     Allure.step("Open " + url + " page");
     getDriver().get(url);
